@@ -1,0 +1,109 @@
+{
+	"populate": {
+		"platinum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+				  "name": "thermalfoundation:ore",
+				  "metadata": 6,
+				 },
+				"material": "stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 6,
+			"min-height": 12,
+			"max-height": 25,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					0,
+					-1,
+					1
+				]
+			}
+		},
+		"aluminum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 4
+				},
+				"material": "stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 7,
+			"min-height": 20,
+			"max-height": 55,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					0,
+					-1,
+					1
+				]
+			}
+		},
+		"gems": {
+			"distribution": "gaussian",
+			"generator": {
+				"block": [
+					{
+						"name": "biomesoplenty:gem_ore",
+						"metadata": 7,
+						"weight": 15
+					},
+					{
+						"name": "biomesoplenty:gem_ore",
+						"metadata": 3,
+						"weight": 9
+					},
+					{
+						"name": "biomesoplenty:gem_ore",
+						"metadata": 1,
+						"weight": 9
+					},
+					{
+						"name": "biomesoplenty:gem_ore",
+						"metadata": 4,
+						"weight": 15
+					},
+					{
+						"name": "biomesoplenty:gem_ore",
+						"metadata": 6,
+						"weight": 9
+					},
+					{
+						"name": "biomesoplenty:gem_ore",
+						"metadata": 5,
+						"weight": 25
+					},					
+					{
+						"name": "biomesoplenty:gem_ore",
+						"metadata": 2,
+						"weight": 18
+					}
+				],
+				"material": "stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 2,
+			"center-height": 20,
+			"spread": 18,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					0,
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

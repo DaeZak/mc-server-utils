@@ -1,0 +1,11 @@
+[
+  {
+    "mob": "EnderZoo.WitherWitch",
+    "random": 0.5,
+    "item": "soulshardstow:ItemMaterials@1"
+  },
+  {
+    "mob": "EnderZoo.Enderminy",
+    "item": "rftoolsdim:dimlet_parcel"
+  }
+]
