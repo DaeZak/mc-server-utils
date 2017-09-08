@@ -21,7 +21,7 @@ recipes.addShaped(<minecraft:bread> * 2,[
 ]);
 
 //Honey, Honey Combs and Sugar
-var forgeBucket = <forge:bucketFilled>;
+var forgeBucket = <forge:bucketfilled>;
 var honeyBucket = forgeBucket.withTag({ 
   FluidName: "honey", 
   Amount: 1000 
@@ -50,6 +50,7 @@ recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2,
   [<ore:string>, <ore:listAllfishraw>]
 );
 
+# Add assorted seafood items to the raw fish oredict
 var rawFish = <ore:listAllfishraw>;
 rawFish.add(<harvestcraft:eelrawitem>);
 rawFish.add(<harvestcraft:scalloprawitem>);
@@ -61,6 +62,7 @@ rawFish.add(<harvestcraft:turtlerawitem>);
 rawFish.add(<harvestcraft:crabrawitem>);
 rawFish.add(<harvestcraft:snailrawitem>);
 
+# Let pams frog legs be cut up into animania frog legs
 recipes.addShapeless(<animania:raw_frog_legs> * 2, [
   <harvestcraft:frograwitem>,<animania:carving_knife:*>
 ]);
