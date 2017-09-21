@@ -190,7 +190,7 @@ mc_snapshot() {
    fi
 
    echo "Snapshotting minecraft world..."
-   as_user "zip -9 -v \"$SNAPSHOT_FILE\" -r \"$MCSTORE/$WORLD\" "
+   as_user "cd \"$MCSTORE\" && zip -9 -v \"$SNAPSHOT_FILE\" -r \"$WORLD\" "
 
    mc_saveon
 
@@ -312,7 +312,7 @@ case "$1" in
     ;;
 
   *)
-  echo "Usage: $0 {backup|bootstrap|start|stop|status|restart|command \"server command\"|disksavehalt|disksaverun}"
+  echo "Usage: $0 {backup|bootstrap|snapshot|start|stop|status|restart|command \"server command\"|disksavehalt|disksaverun}"
   exit 1
   ;;
 esac
