@@ -1,6 +1,7 @@
 */10 * * * * /etc/init.d/minecraft disksaverun
-20 */8 * * * /etc/init.d/minecraft backup
-30 01 * * * /etc/init.d/minecraft snapshot
-15 04 * * * /etc/init.d/minecraft restart
+25 */8 * * * /etc/init.d/minecraft backup
+35 01 * * * /etc/init.d/minecraft snapshot
 05 02 * * * /home/dearly/bin/prune-mc-backups.sh -p 3 -t snapshot
-01 02 * * * /home/dearly/bin/prune-mc-backups.sh -p 6 
+01 02 * * * /home/dearly/bin/prune-mc-backups.sh -p 6
+15 04 * * 0,3 shutdown -r 2 "Scheduled maintenance reboot starting in 2 minutes" 
+15 04 * * 1,2,4,5,6 /etc/init.d/minecraft restart
