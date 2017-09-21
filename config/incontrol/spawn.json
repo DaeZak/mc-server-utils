@@ -1,7 +1,7 @@
 [
   {
     "mob": [
-      "EnderZoo.DireSlime"
+      "direslime"
     ],
     "result": "deny"
   },
@@ -9,6 +9,7 @@
     "mob": [
       "Creeper"
     ],
+    "random": 0.75,
     "result": "deny"
   },
   {

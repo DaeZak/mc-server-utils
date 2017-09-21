@@ -3,20 +3,29 @@
 #Get the value of the -p flag (prune)
 #which determines the threshold for 
 #pruning backups files
-while getopts p: opts; do
+while getopts p:t: opts; do
   case ${opts} in
     p) PRUNE_VAL=${OPTARG} ;;
+    t) PRUNE_TYP=${OPTARG} ;;
   esac
 done
 
 #If no default value is set we will
-#prune down to five backupts
+#prune down to five backups
 if [ -z ${PRUNE_VAL+x} ]; then
   PRUNE_VAL=5
 fi
 
+#We can do either backups or snapshots
+#...backups by default
+case $PRUNE_TYP in
+  backup) PRUNE_TYP=backups ;;
+  snapshot) PRUNE_TYP=snapshots ;;
+  *) PRUNE_TYP=backups ;;
+esac
+
 echo 'Changing directory...'
-cd /media/remote.share/backups/minecraft
+cd "/media/remote.share/backups/minecraft/$PRUNE_TYP"
 echo "Now in ${PWD}"
 
 #ls -1 will give only files (no directories) and
