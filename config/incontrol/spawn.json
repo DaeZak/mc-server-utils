@@ -1,18 +1,12 @@
 [
   {
     "mob": [
-      "direslime"
+      "minecraft:creeper"
     ],
+    "random": 0.5,
     "result": "deny"
-  },
+  }, 
   {
-    "mob": [
-      "Creeper"
-    ],
-    "random": 0.75,
-    "result": "deny"
-  },
-  {
-    "result": "default"  
+    "result": "default"
   }
 ]

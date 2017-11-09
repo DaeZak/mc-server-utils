@@ -39,5 +39,12 @@ recipes.addShapeless(<harvestcraft:candledeco1> * 4, [
 
 recipes.remove(<rustic:candle>);
 recipes.addShaped(<rustic:candle> * 6, [
-  [<ore:string>], [<ore:wax>], [<ore:ingotIron>]
+  [<ore:string>], 
+  [<ore:wax>], 
+  [<ore:ingotIron>]
 ]);
+
+// Immersive Engineering hemp fiber should be in 
+// the string ore dict
+var stringOre = <ore:string>;
+stringOre.add(<immersiveengineering:material:4>);

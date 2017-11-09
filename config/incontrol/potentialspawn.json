@@ -1,1 +1,128 @@
-[]
+[
+  {
+    "dimension": [
+      0
+    ],
+    "seesky": true,
+    "tempcategory": "cold",
+    "block": [
+      "minecraft:snow",
+      "minecraft:snow_layer",
+      "minecraft:ice",
+      "minecraft:packed_ice",
+      "biomesoplenty:hard_ice"
+    ],
+    "maxcount": "10,thermalfoundation:blizz",
+    "mobs": [
+      {
+        "mob": "thermalfoundation:blizz",
+        "weight": 5,
+        "groupcountmin": 2,
+        "groupcountmax": 4
+      },
+      {
+        "mob": "thermalfoundation:blizz",
+        "weight": 2,
+        "groupcountmin": 1,
+        "groupcountmax": 1
+      }
+    ]
+  },
+  {
+    "dimension": [
+      0
+    ],
+    "seesky": true,
+    "weather": "thunder",
+    "maxlight": 9,
+    "block": [
+      "minecraft:grass",
+      "biomesoplenty:grass",
+      "minecraft:dirt",
+      "minecraft:sand",
+      "biomesoplenty:white_sand",
+      "minecraft:gravel",
+      "minecraft:stone"
+    ],
+    "maxcount": "15,thermalfoundation:blitz",
+    "mobs": [
+      {
+        "mob": "thermalfoundation:blitz",
+        "weight": 8,
+        "groupcountmin": 1,
+        "groupcountmax": 2
+      },
+      {
+        "mob": "thermalfoundation:blitz",
+        "weight": 2,
+        "groupcountmin": 3,
+        "groupcountmax": 5
+      }
+    ]
+  },
+  {
+    "dimension": [
+      0
+    ],
+    "seesky": true,
+    "weather": "rain",
+    "maxlight": 7,
+    "block": [
+      "minecraft:grass",
+      "biomesoplenty:grass",
+      "minecraft:dirt",
+      "minecraft:sand",
+      "biomesoplenty:white_sand",
+      "minecraft:gravel",
+      "minecraft:stone"
+    ],
+    "maxcount": "10,thermalfoundation:blitz",
+    "mobs": [
+      {
+        "mob": "thermalfoundation:blitz",
+        "weight": 5,
+        "groupcountmin": 1,
+        "groupcountmax": 2
+      }
+    ]
+  },
+  {
+    "dimension": [
+      0,
+      -1
+    ],
+    "seesky": false,
+    "maxlight": 6,
+    "block": [
+      "minecraft:gravel",
+      "quark:basalt"
+    ],
+    "maxcount": "10,thermalfoundation:basalz",
+    "mobs": [
+      {
+        "mob": "thermalfoundation:basalz",
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 2
+      }
+    ]
+  },
+  {
+    "dimension": [
+      -1
+    ],
+    "block": [
+      "minecraft:magma"
+    ],
+    "random": 0.201,
+    "maxcount": "5,minecraft:blaze",
+    "mobs": [
+      {
+        "mob": "minecraft:blaze",
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 3
+      }
+    ]
+  }
+]

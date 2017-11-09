@@ -292,3 +292,7 @@ recipes.addShaped(<quark:marble:1> * 9, [
 
 // Remove quark marble brick stairs
 recipes.remove(<quark:stone_marble_bricks_stairs>);
+
+// Add Immersive Engineering treated wood sticks to the stick ore entry
+var sticks = <ore:stickWood>;
+sticks.addAll(<ore:stickTreatedWood>);
