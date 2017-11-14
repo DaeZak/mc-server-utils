@@ -124,5 +124,30 @@
         "groupcountmax": 3
       }
     ]
+  },
+  {
+    "dimension": [
+      -1
+    ],
+    "block": [
+      "minecraft:soul_sand"
+    ],
+    "maxlight": 6,
+    "random": 0.351,
+    "maxcount": "8,quark:wraith",
+    "mobs": [
+      {
+        "mob": "quark:wraith",
+        "weight": 1,
+        "groupcountmin": 2,
+        "groupcountmax": 4
+      },
+      {
+        "mob": "quark:wraith",
+        "weight": 4,
+        "groupcountmin": 1,
+        "groupcountmax": 2
+      }
+    ]
   }
 ]
