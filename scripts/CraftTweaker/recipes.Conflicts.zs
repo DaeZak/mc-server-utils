@@ -53,3 +53,20 @@ recipes.addShaped(<roots:gold_knife>,[
   [null,<ore:ingotGold>,null],
   [<ore:stickWood>,null,null]
 ]);
+
+//Random Things and Bibliocraft have the same recipes
+//for different compass items.  Fix the conflict to make
+// bibliocraft compass use nuggets instead of ingots.
+recipes.removeShaped(<bibliocraft:compass>);
+recipes.removeShaped(<randomthings:goldencompass>);
+
+recipes.addShaped(<bibliocraft:compass>,[
+  [null,<ore:nuggetGold>,null],
+  [<ore:nuggetGold>,<minecraft:compass>,<ore:nuggetGold>],
+  [null,<ore:nuggetGold>,null]
+]);
+recipes.addShaped(<randomthings:goldencompass>,[
+  [null,<ore:ingotGold>,null],
+  [<ore:ingotGold>,<minecraft:compass>,<ore:ingotGold>],
+  [null,<ore:ingotGold>,null]
+]);

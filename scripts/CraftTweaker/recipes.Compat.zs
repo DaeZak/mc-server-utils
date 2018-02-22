@@ -18,11 +18,6 @@ recipes.addShapeless(<harvestcraft:honeycombitem> * 8,[<biomesoplenty:hive:1>]);
 var cookedPork = <ore:listAllporkcooked>;
 cookedPork.add(<tconstruct:edible:0>);
 
-// Enable crafting of Cow in a Jar in Animania using mods
-recipes.addShapeless(<cookingforblockheads:cow_jar>,[
-  <cookingforblockheads:milk_jar>,<minecraft:spawn_egg:92>.withTag({EntityTag: {id: "Cow"}})
-]);
-
 // OpenComputers did not add their iron nuggets
 // to the ore:nuggetIron entry
 var oreIronNugget = <ore:nuggetIron>;
@@ -235,63 +230,6 @@ recipes.addShapeless(<harvestcraft:salsaitem> * 2, [
   <ore:cropLime>, 
   <ore:cropGarlic>
 ]);
-
-
-// Astral Sorcery and Quark
-// -- Marble ----------------------------------
-var oreMarble = <ore:stoneMarble>;
-oreMarble.add(<quark:marble:1>);
-// Let quark marble slabs be made from AS marble
-recipes.removeShaped(<quark:stone_marble_slab>);
-recipes.addShaped(<quark:stone_marble_slab> * 6, [
-  [oreMarble, oreMarble, oreMarble]
-]);
-// Let quark marble steps be made from AS marble
-recipes.removeShaped(<quark:stone_marble_stairs>);
-recipes.addShaped(<quark:stone_marble_stairs> * 8, [
-  [oreMarble, null, null], 
-  [oreMarble, oreMarble, null], 
-  [oreMarble, oreMarble, oreMarble]
-]);
-// Let quark marble wall be made from AS marble
-recipes.removeShaped(<quark:marble_wall>);
-recipes.addShaped(<quark:marble_wall> * 6, [
-  [oreMarble, oreMarble, oreMarble], 
-  [oreMarble, oreMarble, oreMarble]
-]);
-
-// Let quark marble brick wall be made from AS marble
-recipes.addShaped(<quark:stone_marble_bricks_wall> * 6, [
-  [<astralsorcery:blockmarble:1>, <astralsorcery:blockmarble:1>, <astralsorcery:blockmarble:1>],
-  [<astralsorcery:blockmarble:1>, <astralsorcery:blockmarble:1>, <astralsorcery:blockmarble:1>]
-]);
-// Let quark marble brick slab be made from AS marble
-recipes.addShaped(<quark:stone_marble_bricks_slab> * 6, [
-  [<astralsorcery:blockmarble:1>, <astralsorcery:blockmarble:1>, <astralsorcery:blockmarble:1>]
-]);
-
-// Let quark marble stairs and slabs turn back to AS marble
-recipes.remove(<quark:world_stone_bricks:4>);
-recipes.addShapeless(<astralsorcery:blockmarble:1> * 3, [
-  <quark:stone_marble_bricks_stairs>, 
-  <quark:stone_marble_bricks_stairs>, 
-  <quark:stone_marble_bricks_stairs>, 
-  <quark:stone_marble_bricks_stairs>
-]);
-recipes.addShapeless(<astralsorcery:blockmarble:1>, [
-  <quark:stone_marble_bricks_slab>, 
-  <quark:stone_marble_bricks_slab>
-]);
-
-recipes.remove(<quark:marble:1>);
-recipes.addShaped(<quark:marble:1> * 9, [
-  [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>],
-  [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>],
-  [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>]
-]);
-
-// Remove quark marble brick stairs
-recipes.remove(<quark:stone_marble_bricks_stairs>);
 
 // Add Immersive Engineering treated wood sticks to the stick ore entry
 var sticks = <ore:stickWood>;

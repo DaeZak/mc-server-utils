@@ -50,6 +50,16 @@ recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2,
   [<ore:string>, <ore:listAllfishraw>]
 );
 
+# SimpleCorn oredict
+var cornOre = <ore:cropCorn>;
+var allVeg = <ore:listAllveggie>;
+
+cornOre.add(<simplecorn:corncob>);
+cornOre.add(<simplecorn:kernels>);
+
+allVeg.add(<simplecorn:corncob>);
+allVeg.add(<simplecorn:kernels>);
+
 # Add assorted seafood items to the raw fish oredict
 var rawFish = <ore:listAllfishraw>;
 rawFish.add(<harvestcraft:eelrawitem>);
@@ -61,8 +71,3 @@ rawFish.add(<harvestcraft:crayfishrawitem>);
 rawFish.add(<harvestcraft:turtlerawitem>);
 rawFish.add(<harvestcraft:crabrawitem>);
 rawFish.add(<harvestcraft:snailrawitem>);
-
-# Let pams frog legs be cut up into animania frog legs
-recipes.addShapeless(<animania:raw_frog_legs> * 2, [
-  <harvestcraft:frograwitem>,<animania:carving_knife:*>
-]);

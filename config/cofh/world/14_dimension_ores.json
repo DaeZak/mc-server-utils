@@ -1,0 +1,296 @@
+{
+	"dependencies": [
+		{
+			"id": "extrautils2"
+		},
+		{
+			"id": "quark"
+		},
+		{
+			"id": "thermalfoundation"
+		}
+	],
+	"populate": {
+		"ex2_spikes_top": {
+			"distribution": "cave",
+			"ceiling": "true",
+			"generator": [
+				{
+					"weight": 65,
+					"type": "stalactite",
+					"block": [
+						{
+							"name": "quark:limestone",
+							"metadata": 0,
+							"weight": 50
+						},
+						{
+							"name": "minecraft:stone",
+							"metadata": 0,
+							"weight": 35
+						},
+						{
+							"name": "minecraft:stone",
+							"metadata": 5,
+							"weight": 15
+						}
+					],
+					"material": "stone",
+					"gen-body": "air",
+					"smooth": "false",
+					"fat": "false",
+					"min-height": 10,
+					"height-variance": 6,
+					"height-mod": 4,
+					"gen-size": 0,
+					"size-variance": 4
+				},
+				{
+					"weight": 30,
+					"type": "stalactite",
+					"block": [
+						{
+							"name": "quark:crystal",
+							"metadata": 1,
+							"weight": 75
+						},
+						{
+							"name": "minecraft:redstone_block",
+							"metadata": 0,
+							"weight": 25
+						}
+					],
+					"material": "stone",
+					"gen-body": "air",
+					"smooth": "false",
+					"fat": "false",
+					"min-height": 14,
+					"height-variance": 4,
+					"height-mod": 6,
+					"gen-size": 0,
+					"size-variance": 2
+				},
+				{
+					"weight": 4,
+					"type": "stalactite",
+					"block": [
+						{
+							"name": "minecraft:stone",
+							"metadata": 5,
+							"weight": 60
+						},
+						{
+							"name": "minecraft:diamond_ore",
+							"metadata": 0,
+							"weight": 38
+						},
+						{
+							"name": "minecraft:diamond_block",
+							"metadata": 0,
+							"weight": 2
+						}
+					],
+					"material": "stone",
+					"gen-body": "air",
+					"smooth": "false",
+					"fat": "false",
+					"min-height": 6,
+					"height-variance": 4,
+					"height-mod": 5,
+					"gen-size": 0,
+					"size-variance": 1
+				},
+				{
+					"weight": 1,
+					"type": "stalactite",
+					"block": [
+						{
+							"name": "quark:crystal",
+							"metadata": 5,
+							"weight": 98
+						},
+						{
+							"name": "minecraft:diamond_block",
+							"metadata": 0,
+							"weight": 2
+						}
+					],
+					"material": "stone",
+					"gen-body": "air",
+					"smooth": "false",
+					"fat": "false",
+					"min-height": 8,
+					"height-variance": 4,
+					"height-mod": 6,
+					"gen-size": 0,
+					"size-variance": 1
+				}				
+			],
+			"cluster-count": 2,
+			"chunk-chance": 3,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+		"ex2_spikes_bottom": {
+			"distribution": "cave",
+			"ceiling": "false",
+			"generator": [
+				{
+					"weight": 65,
+					"type": "stalagmite",
+					"block": [
+						{
+							"name": "quark:limestone",
+							"metadata": 0,
+							"weight": 50
+						},
+						{
+							"name": "minecraft:stone",
+							"metadata": 0,
+							"weight": 35
+						},
+						{
+							"name": "minecraft:stone",
+							"metadata": 5,
+							"weight": 15
+						}
+					],
+					"material": "stone",
+					"gen-body": "air",
+					"smooth": "true",
+					"fat": "true",
+					"min-height": 6,
+					"height-variance": 6,
+					"height-mod": 3,
+					"gen-size": 0,
+					"size-variance": 2
+				},
+				{
+					"weight": 20,
+					"type": "stalagmite",
+					"block": [
+						{
+							"name": "quark:crystal",
+							"metadata": 1,
+							"weight": 95
+						},
+						{
+							"name": "minecraft:redstone_block",
+							"metadata": 0,
+							"weight": 5
+						}
+					],
+					"material": "stone",
+					"gen-body": "air",
+					"smooth": "true",
+					"fat": "true",
+					"min-height": 6,
+					"height-variance": 6,
+					"height-mod": 3,
+					"gen-size": 0,
+					"size-variance": 2
+				},
+				{
+					"weight": 15,
+					"type": "stalagmite",
+					"block": [
+						{
+							"name": "minecraft:stone",
+							"metadata": 0,
+							"weight": 35
+						},
+						{
+							"name": "minecraft:stone",
+							"metadata": 5,
+							"weight": 25
+						},
+						{
+							"name": "minecraft:iron_ore",
+							"metadata": 0,
+							"weight": 20
+						},
+						{
+							"name": "thermalfoundation:ore",
+							"metadata": 5,
+							"weight": 18
+						},
+						{
+							"name": "thermalfoundation:storage",
+							"metadata": 5,
+							"weight": 2
+						}
+					],
+					"material": "stone",
+					"gen-body": "air",
+					"smooth": "true",
+					"fat": "true",
+					"min-height": 6,
+					"height-variance": 6,
+					"height-mod": 3,
+					"gen-size": 0,
+					"size-variance": 2
+				}
+			],
+			"cluster-count": 2,
+			"chunk-chance": 4,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},	
+		"ex2_geodes_bottom": {
+			"distribution": "cave",
+			"ceiling": "false",			
+			"generator": {
+				"type": "geode",
+				"hollow": "true",
+				"block": [
+					{
+						"name": "minecraft:emerald_ore",
+						"metadata": 0,
+						"weight": 80
+					},
+					{
+						"name": "minecraft:stone",
+						"metadata": 3,
+						"weight": 20
+					}
+				],
+				"filler": [
+					{
+						"name": "minecraft:emerald_block",
+						"metadata": 0,
+						"weight": 20
+					},
+					{
+						"name": "quark:crystal",
+						"metadata": 4,
+						"weight": 80
+					}
+				],
+				"crust": "minecraft:obsidian",
+				"material": "stone"
+			},
+			"cluster-count": 2,
+			"chunk-chance": 20,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		}		
+	}
+}
