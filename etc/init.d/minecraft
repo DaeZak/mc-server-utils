@@ -16,7 +16,7 @@
 
 #Settings
 WORLD='sleepyhollow'
-SERVICE='forge-1.11.2-13.20.1.2386-universal.jar'
+SERVICE='forge-1.12.2-14.23.2.2611-universal.jar'
 
 SCREENNAME='minecraft_server'
 OPTIONS='nogui'
@@ -28,11 +28,11 @@ BACKUPPATH='/media/remote.share/backups/minecraft/backups'
 SNAPSHOTPATH='/media/remote.share/backups/minecraft/snapshots'
 MAXHEAP=4096
 HISTORY=2048
-INVOCATION="java -server -Dfile.encoding=UTF-8 \
--Xmx${MAXHEAP}M -XX:+UnlockExperimentalVMOptions \
--XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 \
--XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M \
--XX:+DisableExplicitGC -XX:+UseCompressedOops \
+INVOCATION="java -server \
+-Xmx${MAXHEAP}M -XX:+UseCompressedOops\
+-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC \
+-XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 \
+-XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M \
 -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat \
 -jar $SERVICE $OPTIONS" 
 
@@ -94,6 +94,7 @@ mc_start() {
 
     INVOCATION_FINAL="$INVOCATION"
     as_user "cd $MCPATH && screen -h $HISTORY -dmS ${SCREENNAME} $INVOCATION_FINAL"
+    echo "$INVOCATION_FINAL"
     sleep 7
     if mc_status;
     then
@@ -134,7 +135,7 @@ mc_stop() {
   then
     echo "Stopping $SERVICE"
     as_user "screen -p 0 -S ${SCREENNAME} -X eval 'stuff \"say SERVER SHUTTING DOWN IN 10 SECONDS. Saving map...\"\015'"
-    as_user "screen -p 0 -S ${SCREENNAME} -X eval 'stuff \"save-all\"\015'"
+    as_user "screen -p 0 -S ${SCREENNAME} -X eval 'stuff \"save-all flush\"\015'"
     sleep 10
     as_user "screen -p 0 -S ${SCREENNAME} -X eval 'stuff \"stop\"\015'"
     sleep 7
@@ -151,8 +152,6 @@ mc_stop() {
 } 
 
 mc_backup() {
-   mc_saveoff
-   
    NOW=`date "+%Y-%m-%d_%Hh%M"`
    BACKUP_FILE="$BACKUPPATH/${WORLD}_${NOW}.tar"
    
@@ -169,16 +168,12 @@ mc_backup() {
    echo "Backing up $SERVICE"
    as_user "tar -C \"$MCPATH\" -rf \"$BACKUP_FILE\" $SERVICE"
 
-   mc_saveon
-
    echo "Compressing backup..."
    as_user "gzip -f \"$BACKUP_FILE\""
    echo "Done."
 }
 
 mc_snapshot() {
-   mc_saveoff
-   
    NOW=`date "+%Y-%m-%d-%H-%M-%S"`
    SNAPSHOT_FILE="$SNAPSHOTPATH/${WORLD}/${NOW}.zip"
    
@@ -191,8 +186,6 @@ mc_snapshot() {
 
    echo "Snapshotting minecraft world..."
    as_user "cd \"$MCSTORE\" && zip -9 -v \"$SNAPSHOT_FILE\" -r \"$WORLD\" "
-
-   mc_saveon
 
    echo "Done."
 }
@@ -212,55 +205,39 @@ mc_command() {
 
 mc_disksaverun() {
   if mc_status; then
-    echo "Saving ramdrive to disk."
-    if [ ! -d $MCRAMDSK/$WORLD/data ]; then
-      echo "Error.. Minecraft world not in ram"
-    else
-      if [ -d $MCSTORE/$WORLD.bak ]; then
-        echo "last $WORLD.bak still exist, crashed warning! manual check
-required!!!"
-        exit 1
-      fi
-      if [ -d $MCSTORE/$WORLD ]; then
-        as_user "mv $MCSTORE/$WORLD $MCSTORE/$WORLD.bak"
-      fi
+    mc_saveoff
 
-      TO_SCREEN="screen -p 0 -S minecraft -X eval 'stuff "
-      as_user "$TO_SCREEN \"save-off\"\015'"
-      as_user "$TO_SCREEN \"save-all\"\015'" 
-      as_user "rsync -r -t $MCRAMDSK/$WORLD/ $MCSTORE/$WORLD/"
-      as_user "$TO_SCREEN \"save-on\"\015'"
+    helper_disksave
 
-      if [ -d $MCSTORE/$WORLD.bak ]; then
-        as_user "rm -r $MCSTORE/$WORLD.bak"
-      fi
-    fi
+    mc_saveon
   else
     echo "Service is not running"
- fi
+  fi
 }
 
 mc_disksavehalt() {
-   echo "Saving ramdrive to disk."
-    if [ ! -d $MCRAMDSK/$WORLD/data ]; then
-     echo "Error.. Minecraft world not in ram"
-   else
-     if [ -d $MCSTORE/$WORLD.bak ]; then
-        echo "last $WORLD.bak still exist, crashed warning! manual check
-required!!!"
-        exit 1
-     fi
-     if [ -d $MCSTORE/$WORLD ]; then
-       as_user "mv $MCSTORE/$WORLD $MCSTORE/$WORLD.bak"
-     fi
+  helper_disksave
+}
 
-     echo "Saving, screen session closed"
-     as_user "rsync -r -t $MCRAMDSK/$WORLD/ $MCSTORE/$WORLD/"
+helper_disksave() {
+  echo "Saving ramdrive to disk."
+  if [ ! -d $MCRAMDSK/$WORLD/data ]; then
+    echo "Error.. Minecraft world not in ram"
+  else
+    if [ -d $MCSTORE/$WORLD.bak ]; then
+      echo "last $WORLD.bak still exist, crashed warning! manual check required!!!"
+      exit 1
+    fi
+    if [ -d $MCSTORE/$WORLD ]; then
+      as_user "mv $MCSTORE/$WORLD $MCSTORE/$WORLD.bak"
+    fi
 
-     if [ -d $MCSTORE/$WORLD.bak ]; then
-       as_user "rm -r $MCSTORE/$WORLD.bak"
-     fi
-   fi
+    as_user "rsync -r -t $MCRAMDSK/$WORLD/ $MCSTORE/$WORLD/"
+
+    if [ -d $MCSTORE/$WORLD.bak ]; then
+      as_user "rm -r $MCSTORE/$WORLD.bak"
+    fi
+  fi
 }
 
 #Start-Stop here
@@ -288,12 +265,6 @@ case "$1" in
     mc_disksaverun
     mc_snapshot
     ;;
-  disksavehalt)
-    mc_disksavehalt
-    ;;
-  disksaverun)
-    mc_disksaverun
-    ;;
   status)
     if mc_status;
     then
@@ -312,7 +283,7 @@ case "$1" in
     ;;
 
   *)
-  echo "Usage: $0 {backup|bootstrap|snapshot|start|stop|status|restart|command \"server command\"|disksavehalt|disksaverun}"
+  echo "Usage: $0 {backup|bootstrap|snapshot|start|stop|status|restart|command \"server command\"}"
   exit 1
   ;;
 esac
