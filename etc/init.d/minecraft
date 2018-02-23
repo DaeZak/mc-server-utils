@@ -29,7 +29,7 @@ SNAPSHOTPATH='/media/remote.share/backups/minecraft/snapshots'
 MAXHEAP=4096
 HISTORY=2048
 INVOCATION="java -server \
--Xmx${MAXHEAP}M -XX:+UseCompressedOops\
+-Xmx${MAXHEAP}M -XX:+UseCompressedOops \
 -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC \
 -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 \
 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M \
