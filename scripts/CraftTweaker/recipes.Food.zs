@@ -1,5 +1,5 @@
 //Bread and Grains
-recipes.removeShapeless(<harvestcraft:doughitem>);
+recipes.remove(<harvestcraft:doughitem>);
 recipes.addShapeless(<harvestcraft:doughitem> * 2, [
   <ore:toolMixingbowl>, <ore:listAllwater>, <ore:foodFlour>, <ore:foodSalt>
 ]);
@@ -9,6 +9,12 @@ recipes.addShapeless(<harvestcraft:doughitem> * 2, [
 recipes.addShapeless(<harvestcraft:doughitem> * 2, [
   <ore:toolMixingbowl>, <ore:listAllwater>, <ore:foodFlour>, <ore:itemSalt>
 ]);
+
+recipes.remove(<minecraft:bread>);
+
+recipes.addShapeless(<minecraft:bread>, 
+	[<harvestcraft:bakewareitem>, <harvestcraft:doughitem>]
+);
 
 var grain = <ore:listAllgrain>;
 recipes.addShaped(<minecraft:bread>,[
@@ -45,7 +51,7 @@ recipes.addShapeless(<biomesoplenty:filled_honeycomb> * 9,[
 ]);
 
 # Fishing fixes
-recipes.removeShapeless(<harvestcraft:fishtrapbaititem>);
+recipes.remove(<harvestcraft:fishtrapbaititem>);
 recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2, 
   [<ore:string>, <ore:listAllfishraw>]
 );

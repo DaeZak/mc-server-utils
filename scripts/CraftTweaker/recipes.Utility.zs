@@ -1,5 +1,5 @@
 // Our own nametag recipes
-recipes.removeShapeless(<minecraft:name_tag>);
+recipes.remove(<minecraft:name_tag>);
 recipes.addShaped(<minecraft:name_tag>, [
   [null,<ore:nuggetDiamond>,null],
   [<ore:nuggetSteel>,<ore:paper>,<ore:nuggetSteel>],
@@ -17,9 +17,8 @@ recipes.addShaped(<minecraft:torch>,[
   [null,<minecraft:stick>]
 ]);
 
-// Make blue orchids create blue dye instead of light blue dye
-recipes.removeShapeless(<minecraft:dye:12>,[<minecraft:red_flower:1>]);
-recipes.addShapeless(<biomesoplenty:blue_dye>,[<minecraft:red_flower:1>]);
+// Make blue hydrangeas create blue dye
+recipes.addShapeless(<biomesoplenty:blue_dye>,[<biomesoplenty:flower_0:4>]);
 
 // Make white tulips make white dye instead of light gray dye
 recipes.removeShapeless(<minecraft:dye:7>,[<minecraft:red_flower:6>]);

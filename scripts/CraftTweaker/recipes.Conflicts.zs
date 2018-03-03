@@ -1,6 +1,6 @@
 // Both open computers and TF add diamond chip-like items
 // - make TF the winner
-recipes.removeShapeless(<opencomputers:material:30>);
+recipes.remove(<opencomputers:material:30>);
 var chipDiamond = <ore:chipDiamond>;
 chipDiamond.add(<thermalfoundation:material:16>);
 
@@ -18,11 +18,11 @@ recipes.addShaped(<rustic:crop_stake> * 3, [
 // So instead we remove all the recipes and replace
 // them with one that uses an ingot (or equivalent)
 // and a nugget.
-recipes.removeShaped(<roots:wood_knife>);
-recipes.removeShaped(<roots:stone_knife>);
-recipes.removeShaped(<roots:iron_knife>);
-recipes.removeShaped(<roots:diamond_knife>);
-recipes.removeShaped(<roots:gold_knife>);
+recipes.remove(<roots:wood_knife>);
+recipes.remove(<roots:stone_knife>);
+recipes.remove(<roots:iron_knife>);
+recipes.remove(<roots:diamond_knife>);
+recipes.remove(<roots:gold_knife>);
 
 recipes.addShaped(<roots:wood_knife>,[
   [null,null,<ore:plankWood>],
@@ -57,8 +57,8 @@ recipes.addShaped(<roots:gold_knife>,[
 //Random Things and Bibliocraft have the same recipes
 //for different compass items.  Fix the conflict to make
 // bibliocraft compass use nuggets instead of ingots.
-recipes.removeShaped(<bibliocraft:compass>);
-recipes.removeShaped(<randomthings:goldencompass>);
+recipes.remove(<bibliocraft:compass>);
+recipes.remove(<randomthings:goldencompass>);
 
 recipes.addShaped(<bibliocraft:compass>,[
   [null,<ore:nuggetGold>,null],
