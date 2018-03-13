@@ -11,7 +11,7 @@
 		}
 	],
 	"populate": {
-		"ex2_spikes_top": {
+		"ex2_dd_spikes_top": {
 			"distribution": "cave",
 			"ceiling": "true",
 			"generator": [
@@ -137,7 +137,7 @@
 				]
 			}
 		},
-		"ex2_spikes_bottom": {
+		"ex2_dd_spikes_bottom": {
 			"distribution": "cave",
 			"ceiling": "false",
 			"generator": [
@@ -248,7 +248,7 @@
 				]
 			}
 		},	
-		"ex2_geodes_bottom": {
+		"ex2_dd_geodes_bottom": {
 			"distribution": "cave",
 			"ceiling": "false",			
 			"generator": {

@@ -40,7 +40,7 @@
     "maxKills": 1023,
     "checkPlayer": false,
     "checkLight": true,
-    "checkRedstone": false,
+    "checkRedstone": true,
     "spawnAmount": 4,
     "cooldown": 5
   },
