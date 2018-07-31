@@ -55,18 +55,18 @@ recipes.addShapeless(<harvestcraft:applejuiceitem> * 2,[
   <ore:toolPot>, appleJuiceBottle.transformReplace(<minecraft:glass_bottle>)
 ]);
 recipes.addShapeless(<harvestcraft:applejellyitem> * 2, [
-  <ore:toolSaucepan>, 
-  appleJuiceBottle.transformReplace(<minecraft:glass_bottle>), 
+  <ore:toolSaucepan>,
+  appleJuiceBottle.transformReplace(<minecraft:glass_bottle>),
   <ore:listAllsugar>
 ]);
 recipes.addShapeless(<harvestcraft:applesmoothieitem> * 2, [
-  <ore:toolJuicer>, 
+  <ore:toolJuicer>,
   appleJuiceBottle.transformReplace(<minecraft:glass_bottle>),
   <minecraft:snowball>
 ]);
 recipes.addShapeless(<harvestcraft:applecideritem> * 2, [
-	<ore:toolPot>, 
-	appleJuiceBottle.transformReplace(<minecraft:glass_bottle>), 
+	<ore:toolPot>,
+	appleJuiceBottle.transformReplace(<minecraft:glass_bottle>),
 	<ore:listAllsugar>
 ]);
 
@@ -77,18 +77,18 @@ recipes.addShapeless(<harvestcraft:applejuiceitem> * 2,[
   <harvestcraft:potitem>, appleJuiceBucket
 ]);
 recipes.addShapeless(<harvestcraft:applejellyitem> * 2, [
-  <ore:toolSaucepan>, 
-  appleJuiceBucket, 
+  <ore:toolSaucepan>,
+  appleJuiceBucket,
   <ore:listAllsugar>
 ]);
 recipes.addShapeless(<harvestcraft:applesmoothieitem> * 2, [
-  <ore:toolJuicer>, 
+  <ore:toolJuicer>,
   appleJuiceBucket,
   <minecraft:snowball>
 ]);
 recipes.addShapeless(<harvestcraft:applecideritem> * 2, [
-	<ore:toolPot>, 
-	appleJuiceBucket, 
+	<ore:toolPot>,
+	appleJuiceBucket,
 	<ore:listAllsugar>
 ]);
 
@@ -109,18 +109,18 @@ recipes.addShapeless(<harvestcraft:grapejuiceitem> * 2,[
   <ore:toolPot>, grapeJuiceBottle.transformReplace(<minecraft:glass_bottle>)
 ]);
 recipes.addShapeless(<harvestcraft:grapejellyitem> * 2, [
-  <ore:toolSaucepan>, 
-  grapeJuiceBottle.transformReplace(<minecraft:glass_bottle>), 
+  <ore:toolSaucepan>,
+  grapeJuiceBottle.transformReplace(<minecraft:glass_bottle>),
   <ore:listAllsugar>
 ]);
 recipes.addShapeless(<harvestcraft:grapesodaitem> * 2, [
-  <ore:toolPot>, 
-  <ore:foodBubblywater>, 
-  <ore:listAllsugar>, 
+  <ore:toolPot>,
+  <ore:foodBubblywater>,
+  <ore:listAllsugar>,
   grapeJuiceBottle.transformReplace(<minecraft:glass_bottle>)
 ]);
 recipes.addShapeless(<harvestcraft:grapesmoothieitem> * 2, [
-  <ore:toolJuicer>, 
+  <ore:toolJuicer>,
   grapeJuiceBottle.transformReplace(<minecraft:glass_bottle>),
   <minecraft:snowball>
 ]);
@@ -133,18 +133,18 @@ recipes.addShapeless(<harvestcraft:grapejuiceitem> * 2,[
   <ore:toolPot>, grapeJuiceBucket
 ]);
 recipes.addShapeless(<harvestcraft:grapejellyitem> * 2, [
-  <ore:toolSaucepan>, 
-  grapeJuiceBucket, 
+  <ore:toolSaucepan>,
+  grapeJuiceBucket,
   <ore:listAllsugar>
 ]);
 recipes.addShapeless(<harvestcraft:grapesodaitem> * 2, [
-  <ore:toolPot>, 
-  <ore:foodBubblywater>, 
-  <ore:listAllsugar>, 
+  <ore:toolPot>,
+  <ore:foodBubblywater>,
+  <ore:listAllsugar>,
   grapeJuiceBucket
 ]);
 recipes.addShapeless(<harvestcraft:grapesmoothieitem> * 2, [
-  <ore:toolJuicer>, 
+  <ore:toolJuicer>,
   grapeJuiceBucket,
   <minecraft:snowball>
 ]);
@@ -180,8 +180,8 @@ allPeppers.add(<rustic:chili_pepper>);
 recipes.remove(<harvestcraft:apiary>);
 recipes.removeShaped(<rustic:apiary>);
 recipes.addShaped(<rustic:apiary>, [
-  [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
-  [<ore:plankWood>, <minecraft:item_frame>, <ore:plankWood>], 
+  [<ore:logWood>, <ore:logWood>, <ore:logWood>],
+  [<ore:plankWood>, <minecraft:item_frame>, <ore:plankWood>],
   [<ore:logWood>, <ore:logWood>, <ore:logWood>]
 ]);
 
@@ -215,19 +215,19 @@ allVeggie.add(<rustic:tomato>);
 
 recipes.removeShapeless(<harvestcraft:salsaitem>);
 recipes.addShapeless(<harvestcraft:salsaitem>, [
-  <ore:toolMixingbowl>, 
-  <harvestcraft:tomatoitem>, 
-  <ore:cropOnion>, 
-  <ore:cropSpiceleaf>, 
-  <ore:cropLime>, 
+  <ore:toolMixingbowl>,
+  <harvestcraft:tomatoitem>,
+  <ore:cropOnion>,
+  <ore:cropSpiceleaf>,
+  <ore:cropLime>,
   <ore:cropGarlic>
 ]);
 recipes.addShapeless(<harvestcraft:salsaitem> * 2, [
-  <ore:toolMixingbowl>, 
-  <rustic:tomato>, 
-  <ore:cropOnion>, 
-  <ore:cropSpiceleaf>, 
-  <ore:cropLime>, 
+  <ore:toolMixingbowl>,
+  <rustic:tomato>,
+  <ore:cropOnion>,
+  <ore:cropSpiceleaf>,
+  <ore:cropLime>,
   <ore:cropGarlic>
 ]);
 

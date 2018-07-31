@@ -11,7 +11,6 @@ recipes.addShapeless(<harvestcraft:doughitem> * 2, [
 ]);
 
 recipes.remove(<minecraft:bread>);
-
 recipes.addShapeless(<minecraft:bread>, 
 	[<harvestcraft:bakewareitem>, <harvestcraft:doughitem>]
 );
@@ -55,16 +54,6 @@ recipes.remove(<harvestcraft:fishtrapbaititem>);
 recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2, 
   [<ore:string>, <ore:listAllfishraw>]
 );
-
-# SimpleCorn oredict
-var cornOre = <ore:cropCorn>;
-var allVeg = <ore:listAllveggie>;
-
-cornOre.add(<simplecorn:corncob>);
-cornOre.add(<simplecorn:kernels>);
-
-allVeg.add(<simplecorn:corncob>);
-allVeg.add(<simplecorn:kernels>);
 
 # Add assorted seafood items to the raw fish oredict
 var rawFish = <ore:listAllfishraw>;

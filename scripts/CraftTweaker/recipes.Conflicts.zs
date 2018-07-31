@@ -1,9 +1,3 @@
-// Both open computers and TF add diamond chip-like items
-// - make TF the winner
-recipes.remove(<opencomputers:material:30>);
-var chipDiamond = <ore:chipDiamond>;
-chipDiamond.add(<thermalfoundation:material:16>);
-
 // Rustic crop stakes have the same recipe as Quark vertical
 // planks.  Here we remove that and replace with slab recipe
 recipes.remove(<rustic:crop_stake>);
@@ -11,47 +5,6 @@ recipes.addShaped(<rustic:crop_stake> * 3, [
   [<ore:slabWood>],
   [<ore:slabWood>],
   [<ore:slabWood>]
-]);
-
-// Roots 2 knives have a conflict with Pam's skillet
-// recipes.  Specifically the iron knife conflicts.
-// So instead we remove all the recipes and replace
-// them with one that uses an ingot (or equivalent)
-// and a nugget.
-recipes.remove(<roots:wood_knife>);
-recipes.remove(<roots:stone_knife>);
-recipes.remove(<roots:iron_knife>);
-recipes.remove(<roots:diamond_knife>);
-recipes.remove(<roots:gold_knife>);
-
-recipes.addShaped(<roots:wood_knife>,[
-  [null,null,<ore:plankWood>],
-  [null,<ore:plankWood>,null],
-  [<ore:stickWood>,null,null]
-]);
-
-recipes.addShaped(<roots:stone_knife>,[
-  [null,null,<minecraft:flint>],
-  [null,<ore:cobblestone>,null],
-  [<ore:stickWood>,null,null]
-]);
-
-recipes.addShaped(<roots:iron_knife>,[
-  [null,null,<ore:nuggetIron>],
-  [null,<ore:ingotIron>,null],
-  [<ore:stickWood>,null,null]
-]);
-
-recipes.addShaped(<roots:diamond_knife>,[
-  [null,null,<ore:nuggetDiamond>],
-  [null,<ore:gemDiamond>,null],
-  [<ore:stickWood>,null,null]
-]);
-
-recipes.addShaped(<roots:gold_knife>,[
-  [null,null,<ore:nuggetGold>],
-  [null,<ore:ingotGold>,null],
-  [<ore:stickWood>,null,null]
 ]);
 
 //Random Things and Bibliocraft have the same recipes
@@ -70,3 +23,35 @@ recipes.addShaped(<randomthings:goldencompass>,[
   [<ore:ingotGold>,<minecraft:compass>,<ore:ingotGold>],
   [null,<ore:ingotGold>,null]
 ]);
+
+//Rustic iron lattice conflicts with TE iron gears
+// so we remove the default rustic recipes and replace it
+recipes.removeShaped(<rustic:iron_lattice>);
+recipes.addShaped(<rustic:iron_lattice> * 8, [
+  [null, <ore:stickIron>, null],
+  [<ore:stickIron>, <ore:ingotIron>, <ore:stickIron>],
+  [null, <ore:stickIron>, null]
+]);
+
+// Remove conflicting dust processing recipe for redstone ore
+recipes.remove(<extrautils2:ingredients:0>);
+recipes.addShapeless(<extrautils2:ingredients:0>, [
+  <extrautils2:endershard:*>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>
+]);
+
+// Remove IE non-oreDicted Coal Coke Block recipes
+recipes.remove(<immersiveengineering:stone_decoration:3>);
+//   Including un-crafting IE Coal Coke Block into IE coal coke
+recipes.remove(<immersiveengineering:material:6>);
+
+// Remove Quark charcoal block that conflicts with TF charcoal block
+recipes.remove(<quark:charcoal_block>);
+
+// Fix Random Things soundbox recipe that conflicts with Quark stained planks
+recipes.remove(<randomthings:soundbox>);
+recipes.addShaped(<randomthings:soundbox>, [
+  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+  [<ore:plankWood>, <ore:gemLapis>, <ore:plankWood>],
+  [<ore:plankWood>, <ore:dustRedstone>, <ore:plankWood>]
+]);
+

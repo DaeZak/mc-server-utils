@@ -1,0 +1,12 @@
+[
+  {
+    "dimension": 20,
+    "hostile": true,
+    "multxp": 2
+  },
+  {
+    "dimension": 20,
+    "passive": true,
+    "addxp": 1
+  }
+]

@@ -15,8 +15,8 @@
 ### END INIT INFO
 
 #Settings
-WORLD='sleepyhollow'
-SERVICE='forge-1.12.2-14.23.2.2611-universal.jar'
+WORLD='pangaia'
+SERVICE='forge-1.12.2-14.23.4.2705-universal.jar'
 
 SCREENNAME='minecraft_server'
 OPTIONS='nogui'
@@ -94,7 +94,6 @@ mc_start() {
 
     INVOCATION_FINAL="$INVOCATION"
     as_user "cd $MCPATH && screen -h $HISTORY -dmS ${SCREENNAME} $INVOCATION_FINAL"
-    echo "$INVOCATION_FINAL"
     sleep 7
     if mc_status;
     then
