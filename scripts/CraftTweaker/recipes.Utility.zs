@@ -112,3 +112,9 @@ recipes.addShapeless('zakariel_soul_shard_life_crystal_recharge_mana_bottle',
     player.sendChat("The life crystal greedily absorbs the liquid mana");
   }
 );
+
+// Make Erebus varnished planks
+recipes.remove(<erebus:planks:12>);
+recipes.addShapeless(<erebus:planks:12>, [
+  <ore:plankWood>, <ore:slimeball>, <erebus:planticide>, <erebus:materials:18>
+]);

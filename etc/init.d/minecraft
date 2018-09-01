@@ -25,7 +25,6 @@ MCPATH='/var/minecraft'
 MCSTORE='/var/minecraft/world_storage'
 MCRAMDSK='/var/minecraft/minecraft_ramdisk'
 BACKUPPATH='/media/remote.share/backups/minecraft/backups'
-SNAPSHOTPATH='/media/remote.share/backups/minecraft/snapshots'
 MAXHEAP=4096
 HISTORY=2048
 INVOCATION="java -server \
@@ -172,23 +171,6 @@ mc_backup() {
    echo "Done."
 }
 
-mc_snapshot() {
-   NOW=`date "+%Y-%m-%d-%H-%M-%S"`
-   SNAPSHOT_FILE="$SNAPSHOTPATH/${WORLD}/${NOW}.zip"
-   
-   echo "Saving world to durable storage"
-   if mc_status; then
-     mc_disksaverun
-   else
-     mc_disksavehalt
-   fi
-
-   echo "Snapshotting minecraft world..."
-   as_user "cd \"$MCSTORE\" && zip -9 -v \"$SNAPSHOT_FILE\" -r \"$WORLD\" "
-
-   echo "Done."
-}
-
 mc_command() {
   command="$1";
   if pgrep -u $USERNAME -f $SERVICE > /dev/null
@@ -260,10 +242,6 @@ case "$1" in
     mc_disksaverun
     mc_backup
     ;;
-  snapshot)
-    mc_disksaverun
-    mc_snapshot
-    ;;
   status)
     if mc_status;
     then
@@ -282,7 +260,7 @@ case "$1" in
     ;;
 
   *)
-  echo "Usage: $0 {backup|bootstrap|snapshot|start|stop|status|restart|command \"server command\"}"
+  echo "Usage: $0 {backup|bootstrap|start|stop|status|restart|command \"server command\"}"
   exit 1
   ;;
 esac

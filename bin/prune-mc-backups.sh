@@ -20,7 +20,6 @@ fi
 #...backups by default
 case $PRUNE_TYP in
   backup) PRUNE_TYP=backups ;;
-  snapshot) PRUNE_TYP=snapshots ;;
   *) PRUNE_TYP=backups ;;
 esac
 
