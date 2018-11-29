@@ -38,7 +38,7 @@
 			"generator": {
 				"block": {
 				  "name": "thermalfoundation:ore",
-				  "metadata": 6,
+				  "metadata": 6
 				 },
 				"material": "stone",
 				"cluster-size": 2
