@@ -126,8 +126,7 @@ oreHelper.mergeIngots('Silver',
   <thermalfoundation:material:130>,
   [
     <immersiveengineering:metal:3>,
-    <iceandfire:silver_ingot>,
-    <erebus:materials:45>
+    <iceandfire:silver_ingot>
   ]
 );
 dustProcessOre('Silver', <thermalfoundation:material:130>);
@@ -181,8 +180,7 @@ oreHelper.mergeNuggets('Copper',
 oreHelper.mergeIngots('Copper',
   <thermalfoundation:material:128>,
   [
-    <immersiveengineering:metal>,
-    <erebus:materials:43>
+    <immersiveengineering:metal>
   ]
 );
 dustProcessOre('Copper', <thermalfoundation:material:128>);
@@ -205,8 +203,7 @@ oreHelper.mergeNuggets('Lead',
 oreHelper.mergeIngots('Lead',
   <thermalfoundation:material:131>,
   [
-    <immersiveengineering:metal:2>,
-    <erebus:materials:44>
+    <immersiveengineering:metal:2>
   ]
 );
 dustProcessOre('Lead', <thermalfoundation:material:131>);
@@ -236,8 +233,7 @@ oreHelper.mergeNuggets('Aluminum',
 oreHelper.mergeIngots('Aluminum',
   <thermalfoundation:material:132>,
   [
-    <immersiveengineering:metal:1>,
-    <erebus:materials:42>
+    <immersiveengineering:metal:1>
   ]
 );
 dustProcessOre('Aluminum', <thermalfoundation:material:132>);

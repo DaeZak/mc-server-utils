@@ -4,9 +4,9 @@ recipes.remove(<rustic:apiary>);
 var log = <ore:logWood>;
 var plank = <ore:plankWood>;
 recipes.addShaped(<rustic:apiary>, [
-	[log, log, log],
-	[plank, <minecraft:item_frame>, plank],
-	[log, log, log]
+  [log, log, log],
+  [plank, <minecraft:item_frame>, plank],
+  [log, log, log]
 ]);
 
 // SimpleCorn didn't oredict their corn
@@ -18,18 +18,18 @@ cropCorn.add(<simplecorn:kernels>);
 allVeggies.add(<simplecorn:corncob>);
 allVeggies.add(<simplecorn:kernels>);
 
-// Erebus didn't oredict their fences
-var fences = <ore:fenceWood>;
-fences.add(<erebus:fence_baobab>);
-fences.add(<erebus:fence_eucalyptus>);
-fences.add(<erebus:fence_mahogany>);
-fences.add(<erebus:fence_mossbark>);
-fences.add(<erebus:fence_asper>);
-fences.add(<erebus:fence_cypress>);
-fences.add(<erebus:fence_balsam>);
-fences.add(<erebus:fence_white>);
-fences.add(<erebus:fence_bamboo>);
-fences.add(<erebus:fence_rotten>);
-fences.add(<erebus:fence_marshwood>);
-fences.add(<erebus:fence_scorched>);
-fences.add(<erebus:fence_varnished>);
+// thaumcraft:brassplate
+recipes.remove(<thaumcraft:plate:0>);
+recipes.addShapeless("immersiveengineering_compat/plate_thaumium_brass", <thaumcraft:plate:0>, [<ore:ingotBrass>, <immersiveengineering:tool>]);
+
+// thaumcraft:ironplate
+recipes.remove(<thaumcraft:plate:1>);
+
+// thaumcraft:thaumiumplate
+recipes.remove(<thaumcraft:plate:2>);
+recipes.addShapeless("immersiveengineering_compat/plate_thaumium_thaumium", <thaumcraft:plate:2>, [<ore:ingotThaumium>, <immersiveengineering:tool>]);
+
+// thaumcraft:voidplate
+recipes.remove(<thaumcraft:plate:3>);
+recipes.addShapeless("immersiveengineering_compat/plate_thaumium_void", <thaumcraft:plate:3>, [<ore:ingotVoid>, <immersiveengineering:tool>]);
+
