@@ -55,3 +55,14 @@ recipes.addShaped(<randomthings:soundbox>, [
   [<ore:plankWood>, <ore:dustRedstone>, <ore:plankWood>]
 ]);
 
+// Fix recipes conflict between TE wooden gear and AE2 wooden gear
+// by making TE gear the winner.  Both gears are oreDicted as gearWood
+// so either one is fine so long as recipes are following the oreDict
+recipes.remove(<thermalfoundation:material:22>);
+recipes.remove(<appliedenergistics2:material:40>);
+recipes.addShaped("ct_wooden_gear-te-material_22", <thermalfoundation:material:22>, [
+  [null, <ore:stickWood>, null],
+  [<ore:stickWood>, null, <ore:stickWood>],
+  [null, <ore:stickWood>, null]
+]);
+
