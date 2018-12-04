@@ -11,7 +11,7 @@ recipes.addShapeless(<harvestcraft:doughitem> * 2, [
 ]);
 
 recipes.remove(<minecraft:bread>);
-recipes.addShapeless(<minecraft:bread>, 
+recipes.addShapeless(<minecraft:bread>,
 	[<harvestcraft:bakewareitem>, <harvestcraft:doughitem>]
 );
 
@@ -27,9 +27,9 @@ recipes.addShaped(<minecraft:bread> * 2,[
 
 //Honey, Honey Combs and Sugar
 var forgeBucket = <forge:bucketfilled>;
-var honeyBucket = forgeBucket.withTag({ 
-  FluidName: "honey", 
-  Amount: 1000 
+var honeyBucket = forgeBucket.withTag({
+  FluidName: "honey",
+  Amount: 1000
 });
 recipes.addShapeless(<harvestcraft:honeyitem> * 4, [honeyBucket]);
 
@@ -51,7 +51,7 @@ recipes.addShapeless(<biomesoplenty:filled_honeycomb> * 9,[
 
 # Fishing fixes
 recipes.remove(<harvestcraft:fishtrapbaititem>);
-recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2, 
+recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2,
   [<ore:string>, <ore:listAllfishraw>]
 );
 
@@ -66,3 +66,6 @@ rawFish.add(<harvestcraft:crayfishrawitem>);
 rawFish.add(<harvestcraft:turtlerawitem>);
 rawFish.add(<harvestcraft:crabrawitem>);
 rawFish.add(<harvestcraft:snailrawitem>);
+
+var fruit = <ore:listAllfruit>;
+fruit.add(<biomesoplenty:berries>);
