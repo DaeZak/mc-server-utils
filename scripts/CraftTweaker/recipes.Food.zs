@@ -49,13 +49,13 @@ recipes.addShapeless(<biomesoplenty:filled_honeycomb> * 9,[
   <biomesoplenty:hive:3>
 ]);
 
-# Fishing fixes
+// Fishing fixes
 recipes.remove(<harvestcraft:fishtrapbaititem>);
 recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2,
   [<ore:string>, <ore:listAllfishraw>]
 );
 
-# Add assorted seafood items to the raw fish oredict
+// Add assorted seafood items to the raw fish oredict
 var rawFish = <ore:listAllfishraw>;
 rawFish.add(<harvestcraft:eelrawitem>);
 rawFish.add(<harvestcraft:scalloprawitem>);
@@ -67,5 +67,10 @@ rawFish.add(<harvestcraft:turtlerawitem>);
 rawFish.add(<harvestcraft:crabrawitem>);
 rawFish.add(<harvestcraft:snailrawitem>);
 
+// Add BoP berries to fruit oredict
 var fruit = <ore:listAllfruit>;
 fruit.add(<biomesoplenty:berries>);
+
+// Add Rustic ginseng to spice oredict
+var spices = <ore:listAllspice>;
+spices.add(<rustic:ginseng>);
