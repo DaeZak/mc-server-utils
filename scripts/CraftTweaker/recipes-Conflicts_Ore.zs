@@ -252,3 +252,13 @@ recipes.addShaped(<immersiveengineering:storage:1>, [
   [<immersiveengineering:storage_slab:1>],
   [<immersiveengineering:storage_slab:1>]
 ]);
+
+// Add TConstruct Aluminum Brass to the brass list for TC
+var oreNuggetBrass = <ore:nuggetBrass>;
+oreNuggetBrass.add(<tconstruct:nuggets:5>);
+
+var oreIngotBrass = <ore:ingotBrass>;
+oreIngotBrass.add(<tconstruct:ingots:5>);
+
+var oreBlockBrass = <ore:blockBrass>;
+oreBlockBrass.add(<tconstruct:metal:5>);
