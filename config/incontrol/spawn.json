@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "mob": [
+      "enderzoo:concussioncreeper",
+      "enderzoo:enderminy"
+    ],
+    "dimension": 7,
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "enderzoo:witherwitch"
+    ],
+    "dimension": 7,
+    "random": 0.28,
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "minecraft:creeper"
+    ],
+    "random": 0.26,
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "primitivemobs:rocket_creeper"
+    ],
+    "random": 0.56,
+    "result": "deny"
+  }
+]
