@@ -1,1 +1,126 @@
-[]
+[
+  {
+    "mob": [
+      "betteranimalsplus:deer",
+      "betteranimalsplus:reindeer"
+    ],
+    "remove": "betteranimalsplus:venisonraw"
+  },
+  {
+    "mob": [
+      "twilightforest:deer"
+    ],
+    "remove": "twilightforest:raw_venison"
+  },
+  {
+    "mob": [
+      "betteranimalsplus:deer",
+      "betteranimalsplus:reindeer",
+      "twilightforest:deer"
+    ],
+    "random": 0.55,
+    "item": "harvestcraft:venisonrawitem",
+    "itemcount": "1/1-3/2-4"
+  },
+  {
+    "mob": [
+      "animania:bull_angus",
+      "animania:cow_angus",
+      "animania:bull_friesian",
+      "animania:cow_friesian",
+      "animania:bull_hereford",
+      "animania:cow_hereford",
+      "animania:bull_highland",
+      "animania:cow_highland",
+      "animania:bull_holstein",
+      "animania:cow_holstein",
+      "animania:bull_jersey",
+      "animania:cow_jersey",
+      "animania:bull_longhorn",
+      "animania:cow_longhorn",
+      "animania:bull_mooshroom",
+      "animania:cow_mooshroom"
+    ],
+    "random": 0.35,
+    "item": "minecraft:beef",
+    "itemcount": "0-1/1-2/2-3"
+  },
+  {
+    "mob": [
+      "animania:hen_leghorn",
+      "animania:rooster_leghorn",
+      "animania:hen_orpington",
+      "animania:rooster_orpington",
+      "animania:hen_plymouth_rock",
+      "animania:rooster_plymouth_rock",
+      "animania:hen_rhode_island_red",
+      "animania:rooster_rhode_island_red",
+      "animania:hen_wyandotte",
+      "animania:rooster_wyandotte"
+    ],
+    "random": 0.4,
+    "item": "minecraft:chicken",
+    "itemcount": "0-1/1-2/2-3"
+  },
+  {
+    "mob": [
+      "animania:hog_duroc",
+      "animania:sow_duroc",
+      "animania:hog_hampshire",
+      "animania:sow_hampshire",
+      "animania:hog_large_black",
+      "animania:sow_large_black",
+      "animania:hog_large_white",
+      "animania:sow_large_white",
+      "animania:hog_old_spot",
+      "animania:sow_old_spot",
+      "animania:hog_yorkshire",
+      "animania:sow_yorkshire"
+    ],
+    "random": 0.3,
+    "item": "minecraft:porkchop",
+    "itemcount": "0-1/1-2/2-3"
+  },
+  {
+    "mob": [
+      "animania:ewe_dorper",
+      "animania:ram_dorper",
+      "animania:ewe_dorset",
+      "animania:ram_dorset",
+      "animania:ewe_friesian",
+      "animania:ram_friesian",
+      "animania:ewe_jacob",
+      "animania:ram_jacob",
+      "animania:ewe_merino",
+      "animania:ram_merino",
+      "animania:ewe_suffolk",
+      "animania:ram_suffolk"
+    ],
+    "random": 0.25,
+    "item": "minecraft:mutton",
+    "itemcount": "0-1/1-2/2-3"
+  },
+  {
+    "mob": [
+      "animania:buck_chinchilla",
+      "animania:doe_chinchilla",
+      "animania:buck_cottontail",
+      "animania:doe_cottontail",
+      "animania:buck_dutch",
+      "animania:doe_dutch",
+      "animania:buck_havana",
+      "animania:doe_havana",
+      "animania:buck_jack",
+      "animania:doe_jack",
+      "animania:buck_lop",
+      "animania:doe_lop",
+      "animania:buck_new_zealand",
+      "animania:doe_new_zealand",
+      "animania:buck_rex",
+      "animania:doe_rex"
+    ],
+    "random": 0.2,
+    "item": "minecraft:rabbit",
+    "itemcount": "0-1/1-2/2-3"
+  }
+]

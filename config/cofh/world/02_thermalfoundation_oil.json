@@ -1,7 +1,9 @@
 {
 	"dependencies": "thermalfoundation",
+    	"priority": 999,
 	"populate": {
 		"oil_sand_clathrate": {
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
 				"block": {
@@ -35,6 +37,7 @@
 			"dimension": "all"
 		},
 		"oil_shale_clathrate": {
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
 				"block": [
@@ -87,6 +90,7 @@
 			"dimension": "all"
 		},
 		"oil_sand": {
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
 				"type": "geode",
@@ -131,11 +135,14 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+                                        7,
+					10
 				]
 			}
 		},
 		"oil_shale": {
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
 				"type": "geode",
@@ -172,7 +179,9 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+                                        7,
+					10
 				]
 			}
 		}

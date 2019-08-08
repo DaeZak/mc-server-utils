@@ -1,0 +1,13 @@
+{
+	"name": "caffeine_buzz",
+	"potion": "minecraft:speed",
+	"amplifier": 0,
+	"minimum": 85,
+	"maximum": 100,
+	"detect": "any",
+	"nutrients": [
+		"caffeine"
+	],
+	"particles": "transparent",
+	"enabled": true
+}

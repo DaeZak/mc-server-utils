@@ -1,0 +1,30 @@
+{
+	"dependencies": "mysticalworld",
+	"priority": 970,
+	"populate": {
+		"amethyst": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "mysticalworld:amethyst_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 5,
+			"min-height": 5,
+			"max-height": 32,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+					10
+				]
+			}
+		}
+	}
+}

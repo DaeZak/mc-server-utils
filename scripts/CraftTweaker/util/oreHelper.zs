@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.ICraftingRecipe;
+import mods.jei.JEI;
 
 function getOreMap(materialRaw as string) as IOreDictEntry[string] {
   val material = materialRaw.trim();
@@ -27,9 +28,6 @@ function oreDictUpsert(oreEntry as IOreDictEntry, item as IItemStack) as void {
 }
 
 function mergeNuggets(materialRaw as string, winner as IItemStack, losers as IItemStack[]) as bool {
-  var set as IItemStack[];
-  set = losers + winner;
-
   val oreMap = getOreMap(materialRaw);
   val oreNugget = oreMap.nugget;
   val oreIngot = oreMap.ingot;
@@ -39,8 +37,9 @@ function mergeNuggets(materialRaw as string, winner as IItemStack, losers as IIt
     return false;
   }
 
-  for item in set {
-    recipes.remove(item);
+  recipes.remove(winner);
+  for item in losers {
+    JEI.removeAndHide(item);
     oreDictUpsert(oreNugget, item);
   }
 
@@ -52,9 +51,6 @@ function mergeNuggets(materialRaw as string, winner as IItemStack, losers as IIt
 }
 
 function mergeIngots(materialRaw as string, winner as IItemStack, losers as IItemStack[]) as bool {
-  var set as IItemStack[];
-  set = losers + winner;
-
   val oreMap = getOreMap(materialRaw);
   val oreNugget = oreMap.nugget;
   val oreIngot = oreMap.ingot;
@@ -65,8 +61,9 @@ function mergeIngots(materialRaw as string, winner as IItemStack, losers as IIte
     return false;
   }
 
-  for item in set {
-    recipes.remove(item);
+  recipes.remove(winner);
+  for item in losers {
+    JEI.removeAndHide(item);
     oreDictUpsert(oreIngot, item);
   }
 
@@ -108,4 +105,24 @@ function mergeOreBlocks(materialRaw as string, winner as IItemStack, losers as I
   ]);
 
   return true;
+}
+
+function dustProcessOre(materialRaw as string, outputDust as IItemStack, outputIngot as IItemStack) as void {
+  val oreMap = getOreMap(materialRaw);
+  val oreDust = oreMap.dust;
+  val oreIngot = oreMap.ingot;
+  val oreOreBlock = oreMap.ore;
+
+  recipes.addShapeless(outputDust * 2, [
+    oreOreBlock, <ore:dustPetrotheum>
+  ]);
+  recipes.addShapeless(outputDust, [
+    oreIngot, <ore:dustPetrotheum>
+  ]);
+  recipes.addShapeless(outputIngot, [
+    oreOreBlock, <ore:dustPyrotheum>
+  ]);
+  recipes.addShapeless(outputIngot * 2, [
+    oreOreBlock, <ore:dustPetrotheum>, <ore:dustPyrotheum>
+  ]);
 }
