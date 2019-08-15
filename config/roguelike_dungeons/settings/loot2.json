@@ -1,0 +1,77 @@
+{
+	"name" : "custom:loot2",
+	"loot_rules" : [
+        {
+			"level" : 2,
+			"type" : "TOOLS",
+			"loot" : [
+				{"data" : {"type" : "tool", "level" : 2}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 2,
+			"type" : "WEAPONS",
+			"loot" : [
+				{"data" : {"type" : "weapon", "level" : 2}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 2,
+			"type" : "ARMOUR",
+			"loot" : [
+				{"data" : {"type" : "armour", "level" : 2}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 2,
+			"type" : "ORE",
+			"loot" : [
+				{"data" : {"name" : "minecraft:iron_ingot"}, "weight" : 3},
+				{"data" : {"name" : "minecraft:iron_nugget", "min" : 3, "max" : 7}, "weight" : 2},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 128}, "weight" : 3},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 192, "min" : 3, "max" : 7}, "weight" : 2},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 130}, "weight" : 2},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 194, "min" : 3, "max" : 7}, "weight" : 1},
+				{"data" : {"name" : "minecraft:coal", "min" : 3, "max" : 7}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 5
+		},
+		{
+			"level" : 2,
+			"loot" : [
+                {"data": {"name": "animania:carving_knife"}, "weight": 1},
+                {"data": {"name": "thermalexpansion:morb", "min": 3, "max": 10}, "weight": 3},
+                {"data": {"name": "claysoldiers:shear_blade"}, "weight": 1},
+                {"data": {"name": "claysoldiers:doll_horse", "nbt": "{dollHorse: {type: 3}}"}, "weight": 2},
+                {"data": {"name": "claysoldiers:doll_horse", "nbt": "{dollHorse: {type: 7}}"}, "weight": 1},
+                {"data": {"name": "claysoldiers:doll_bunny", "nbt": "{doll_bunny: {type: 9}}"}, "weight": 1},
+				{"data" : {"name" : "lootbags:itemlootbag", "meta" : 2}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 2
+		},
+		{
+			"level" : 2,
+			"loot" : [
+				{"data" : {"type" : "enchanted_book", "ench" : 15}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 8
+		},
+		{
+			"level" : 2,
+			"loot" : [
+				{"data" : {"type" : "specialty", "level" : 2}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 4
+		}
+	]
+}

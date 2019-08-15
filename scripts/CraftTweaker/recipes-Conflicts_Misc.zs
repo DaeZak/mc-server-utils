@@ -12,18 +12,13 @@ JEI.removeAndHide(<chisel:block_charcoal2:1>);
 JEI.removeAndHide(<microblockcbe:stone_rod>);
 JEI.removeAndHide(<inspirations:materials:8>);
 
-// Fix Erebus Umber Stone Pillar that conflicts with 
-//  TConstruct stone rod
-recipes.remove(<erebus:umberstone_pillar>);
-recipes.addShaped("erebus_umberstone_pillar", <erebus:umberstone_pillar> * 6, [
-  [<ore:stoneUmber>,<ore:stoneUmber>, null], 
-  [<ore:stoneUmber>,<ore:stoneUmber>, null],
-  [<ore:stoneUmber>,<ore:stoneUmber>, null]
+// Correct a conflict between IaF chain link
+// and OC disk platter by making the disk platter
+// recipes more silicon centric
+recipes.remove(<opencomputers:material:12>);
+recipes.addShaped("opencomputers_material41", <opencomputers:material:12>, [
+  [null, <minecraft:iron_nugget>, null], 
+  [<minecraft:iron_nugget>, <ore:itemSilicon>, <minecraft:iron_nugget>], 
+  [null, <minecraft:iron_nugget>, null]
 ]);
-
-// Remove silly Erebus smooth tile recipe and replace
-//  with more conventional 4x4 = 4 recipe
-recipes.remove(<erebus:umberstone:5>);
-// Smelt Umber Stone into Smooth Umber Tile in a furnace
-furnace.addRecipe(<erebus:umberstone:5>, <erebus:umberstone>, 0.1);
 

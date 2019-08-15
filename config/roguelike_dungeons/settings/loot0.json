@@ -1,0 +1,73 @@
+{
+	"name" : "custom:loot0",
+	"loot_rules" : [
+        {
+			"level" : 0,
+			"type" : "TOOLS",
+			"loot" : [
+				{"data" : {"type" : "tool", "level" : 0}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 0,
+			"type" : "WEAPONS",
+			"loot" : [
+				{"data" : {"type" : "weapon", "level" : 0}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 0,
+			"type" : "ARMOUR",
+			"loot" : [
+				{"data" : {"type" : "armour", "level" : 0}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 0,
+			"type" : "ORE",
+			"loot" : [
+				{"data" : {"name" : "minecraft:iron_ingot"}, "weight" : 1},
+				{"data" : {"name" : "minecraft:iron_nugget", "min" : 1, "max" : 4}, "weight" : 2},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 128}, "weight" : 1},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 192, "min" : 1, "max" : 4}, "weight" : 2},
+				{"data" : {"name" : "minecraft:coal", "min" : 3, "max" : 7}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 3
+		},
+		{
+			"level" : 0,
+			"loot" : [
+                {"data": {"name": "thermalcultivation:watering_can", "nbt": "{Water: 0, Mode: 0}"}, "weight": 1},
+                {"data": {"name": "animania:carving_knife"}, "weight": 2},
+                {"data": {"name": "thermalexpansion:morb", "min": 2, "max": 8}, "weight": 2},
+                {"data": {"name": "claysoldiers:shear_blade"}, "weight": 1},
+                {"data": {"name": "claysoldiers:doll_horse", "nbt": "{dollHorse: {type: 9}}"}, "weight": 1}
+			],
+			"each" : false,
+			"quantity" : 2
+		},
+		{
+			"level" : 0,
+			"loot" : [
+				{"data" : {"type" : "enchanted_book", "ench" : 1}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 4
+		},
+		{
+			"level" : 0,
+			"loot" : [
+				{"data" : {"type" : "specialty", "level" : 0}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 2
+		}
+	]
+}

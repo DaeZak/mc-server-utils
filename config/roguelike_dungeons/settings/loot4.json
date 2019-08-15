@@ -1,0 +1,85 @@
+{
+	"name" : "custom:loot4",
+	"loot_rules" : [
+        {
+			"level" : 4,
+			"type" : "TOOLS",
+			"loot" : [
+				{"data" : {"type" : "tool", "level" : 4}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 4,
+			"type" : "WEAPONS",
+			"loot" : [
+				{"data" : {"type" : "weapon", "level" : 4}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 4,
+			"type" : "ARMOUR",
+			"loot" : [
+				{"data" : {"type" : "armour", "level" : 4}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 1
+		},
+		{
+			"level" : 4,
+			"type" : "ORE",
+			"loot" : [
+				{"data" : {"name" : "minecraft:iron_ingot"}, "weight" : 5},
+				{"data" : {"name" : "minecraft:iron_nugget", "min" : 4, "max" : 8}, "weight" : 1},
+				{"data" : {"name" : "minecraft:gold_ingot"}, "weight" : 2},
+				{"data" : {"name" : "minecraft:diamond"}, "weight" : 1},                
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 133}, "weight" : 2},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 134}, "weight" : 1},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 128}, "weight" : 5},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 192, "min" : 4, "max" : 8}, "weight" : 1},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 130}, "weight" : 3},
+				{"data" : {"name" : "thermalfoundation:material", "meta" : 194, "min" : 4, "max" : 8}, "weight" : 1},
+				{"data" : {"name" : "minecraft:coal", "min" : 4, "max" : 12}, "weight" : 1}
+			],
+			"each" : true,
+			"quantity" : 8
+		},
+		{
+			"level" : 4,
+			"loot" : [
+                {"data": {"name": "thermalexpansion:morb", "min": 3, "max": 10}, "weight": 4},
+                {"data": {"name": "thermalexpansion:morb", "meta": 1, "min": 1, "max": 2}, "weight": 1},
+                {"data": {"name": "claysoldiers:doll_horse", "nbt": "{dollHorse: {type: 3}}"}, "weight": 2},
+                {"data": {"name": "claysoldiers:doll_horse", "nbt": "{dollHorse: {type: 7}}"}, "weight": 2},
+                {"data": {"name": "claysoldiers:doll_bunny", "nbt": "{doll_bunny: {type: 9}}"}, "weight": 1},
+                {"data": {"name": "claysoldiers:doll_pegasus", "nbt": "{dollPegasus: {type: 6}}"}, "weight": 1},
+                {"data": {"name": "claysoldiers:doll_turtle", "nbt": "{dollTurtle: {type: 0}}"}, "weight": 1},
+                {"data": {"name": "claysoldiers:doll_turtle", "nbt": "{dollTurtle: {type: 8}}"}, "weight": 1},
+				{"data" : {"name" : "lootbags:itemlootbag", "meta" : 2}, "weight" : 3},
+				{"data" : {"name" : "lootbags:itemlootbag", "meta" : 3}, "weight" : 2},
+				{"data" : {"name" : "lootbags:itemlootbag", "meta" : 4}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 2
+		},
+		{
+			"level" : 4,
+			"loot" : [
+				{"data" : {"type" : "enchanted_book", "ench" : 30}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 6
+		},
+		{
+			"level" : 4,
+			"loot" : [
+				{"data" : {"type" : "specialty", "level" : 4}, "weight" : 1}
+			],
+			"each" : false,
+			"quantity" : 6
+		}
+	]
+}

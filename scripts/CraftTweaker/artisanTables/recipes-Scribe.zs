@@ -18,70 +18,9 @@ recipes.addShaped("artisan_worktables_workstation_scribe", <artisanworktables:wo
 
 val scribeTable = RecipeBuilder.get("scribe");
 
-// Replace mystcraft ink recipes with a
-// recipe using: 
-//   - Ender dust
-//   - dyeBlack
-//   - Pixie Dust 
-//   - a glass bottle
-//   - and some water
-recipes.remove(<mystcraft:vial>);
-scribeTable
-  .setShaped([
-    [null, <ore:buttonWood>, null],
-    [<ore:dustEnder>, <ore:dyeBlack>, <ore:pixieDust>],
-    [null, <minecraft:glass_bottle>, null]])
-  .setFluid(<liquid:water> * 500)
-  .addOutput(<mystcraft:vial>)
-  .addTool(<ore:artisansBeaker>, 20)
-  .addTool(<ore:artisansGrimoire>, 10)
-  .setLevelRequired(10)
-  .setConsumeExperience(true)
-  .setName("artisan_worktables_mystcraft_ink_bottle_pixie")
-  .create();
-scribeTable
-  .setShaped([
-    [null, <ore:buttonWood>, null],
-    [<ore:dustEnder>, <ore:dyeBlack>, <ore:dustRedstone>],
-    [null, <ore:dragonBlood>, null]])
-  .addOutput(<mystcraft:vial>)
-  .addTool(<ore:artisansBeaker>, 30)
-  .addTool(<ore:artisansGrimoire>, 20)
-  .setLevelRequired(10)
-  .setConsumeExperience(true)
-  .setName("artisan_worktables_mystcraft_ink_bottle_dragon")
-  .create();
-
-// Migrate Symbol portfolio recipes to the
-// Scribe worktable
-recipes.remove(<mystcraft:portfolio>);
-scribeTable
-  .setShaped([
-    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>], 
-    [<minecraft:string>, null, null], 
-    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>]])
-  .addOutput(<mystcraft:portfolio>.withTag({}))
-  .addTool(<ore:artisansNeedle>, 10)
-  .setName("artisan_worktables_mystcraft_portfolio")
-  .create();
-
-// Migrate Collation folder recipes to the
-// Scribe worktable
-recipes.remove(<mystcraft:folder>);
-scribeTable
-  .setShaped([
-    [null, <minecraft:leather>, null],
-    [<minecraft:string>, null, null],
-    [null, <minecraft:leather>, null]])
-  .addOutput(<mystcraft:folder>.withTag({Pages: {}}))
-  .addTool(<ore:artisansNeedle>, 5)
-  .setName("artisan_worktables_mystcraft_folder")
-  .create();
-
 // Remove alternative book recipes (aside from the Tinkers one)
 // and add a slightly more efficient scribe book recipe
 recipes.removeByRecipeName("roots:book");
-recipes.removeByRecipeName("erebus:book");
 scribeTable
   .setShaped([
     [<ore:paper>, <ore:paper>],
