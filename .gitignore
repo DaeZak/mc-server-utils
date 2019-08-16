@@ -1,4 +1,5 @@
 *.sw[pon]
+config/AppliedEnergistics2/VersionChecker.cfg
 config/splash.properties
 config/jei/bookmarks.ini
 config/jei/worldSettings.cfg
