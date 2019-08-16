@@ -3,3 +3,5 @@ config/splash.properties
 config/jei/bookmarks.ini
 config/jei/worldSettings.cfg
 config/multimob/modInformation/*.txt
+config/worldedit/sessions/*
+config/worldedit/schematics/*
