@@ -44,7 +44,6 @@ recipes.addShaped(<thermalfoundation:storage_alloy:0>, [
 oreHelper.mergeIngots('Tin',
   <thermalfoundation:material:129>,
   [
-    <erebus:materials:46>,
     <projectred-core:resource_item:101>
   ]
 );
@@ -118,7 +117,6 @@ oreHelper.mergeNuggets('Silver',
 oreHelper.mergeIngots('Silver',
   <thermalfoundation:material:130>,
   [
-    <erebus:materials:45>,
     <immersiveengineering:metal:3>,
     <iceandfire:silver_ingot>,
     <projectred-core:resource_item:102>
@@ -182,7 +180,6 @@ oreHelper.mergeNuggets('Copper',
 oreHelper.mergeIngots('Copper',
   <thermalfoundation:material:128>,
   [
-    <erebus:materials:43>,
     <immersiveengineering:metal>,
     <projectred-core:resource_item:100>
   ]
@@ -211,7 +208,6 @@ oreHelper.mergeNuggets('Lead',
 oreHelper.mergeIngots('Lead',
   <thermalfoundation:material:131>,
   [
-    <erebus:materials:44>,
     <immersiveengineering:metal:2>
   ]
 );
