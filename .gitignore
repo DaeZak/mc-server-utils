@@ -1,1 +1,5 @@
-.sw[nop]
+*.sw[pon]
+config/splash.properties
+config/jei/bookmarks.ini
+config/jei/worldSettings.cfg
+config/multimob/modInformation/*.txt
