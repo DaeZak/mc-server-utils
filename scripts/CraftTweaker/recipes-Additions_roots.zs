@@ -14,3 +14,6 @@ recipes.remove(<roots:wildwood_pressure_plate>);
 recipes.addShaped(<roots:wildwood_pressure_plate>, [
   [<roots:wildwood_planks>, <roots:wildwood_planks>]
 ]);
+
+// Remove the weird roots book recipe
+recipes.removeByRecipeName("roots:book");

@@ -1,6 +1,7 @@
 #modloaded appliedenergistics2 thermalfoundation
 
 import mods.jei.JEI;
+import mods.appliedenergistics2.Grinder;
 
 // Fix recipes conflict between TE wooden gear and AE2 wooden gear
 // by making TE gear the winner.  Both gears are oreDicted as gearWood
@@ -20,3 +21,6 @@ recipes.removeByRecipeName("thermalfoundation:material_97");
 // Remove and hide AE2 Iron and Gold dust - we don't use them
 JEI.removeAndHide(<appliedenergistics2:material:49>);
 JEI.removeAndHide(<appliedenergistics2:material:51>);
+
+// Let AE2 Grinder grind aluminum
+Grinder.addRecipe(<thermalfoundation:material:68>, <ore:oreAluminum>, 4);

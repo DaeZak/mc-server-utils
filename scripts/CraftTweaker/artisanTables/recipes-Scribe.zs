@@ -18,80 +18,50 @@ recipes.addShaped("artisan_worktables_workstation_scribe", <artisanworktables:wo
 
 val scribeTable = RecipeBuilder.get("scribe");
 
-// Replace mystcraft ink recipes with a
-// recipe using: 
-//   - Ender dust
-//   - dyeBlack
-//   - Pixie Dust 
-//   - a glass bottle
-//   - and some water
-recipes.remove(<mystcraft:vial>);
+// Additional paper recipes for scribe table
 scribeTable
   .setShaped([
-    [null, <ore:buttonWood>, null],
-    [<ore:dustEnder>, <ore:dyeBlack>, <ore:pixieDust>],
-    [null, <minecraft:glass_bottle>, null]])
-  .setFluid(<liquid:water> * 500)
-  .addOutput(<mystcraft:vial>)
-  .addTool(<ore:artisansBeaker>, 20)
-  .addTool(<ore:artisansGrimoire>, 10)
-  .setLevelRequired(10)
-  .setConsumeExperience(true)
-  .setName("artisan_worktables_mystcraft_ink_bottle_pixie")
+    [<ore:sugarcane>, <ore:sugarcane>, <ore:sugarcane>]])
+  .addOutput(<minecraft:paper> * 3)
+  .setExtraOutputOne(<minecraft:paper>, 0.25)
+  .setExtraOutputTwo(<minecraft:paper>, 0.10)
+  .addTool(<ore:artisansRazor>, 5)
+  .setName("artisan_worktables_paper_sugarcane")
   .create();
 scribeTable
   .setShaped([
-    [null, <ore:buttonWood>, null],
-    [<ore:dustEnder>, <ore:dyeBlack>, <ore:dustRedstone>],
-    [null, <ore:dragonBlood>, null]])
-  .addOutput(<mystcraft:vial>)
-  .addTool(<ore:artisansBeaker>, 30)
-  .addTool(<ore:artisansGrimoire>, 20)
-  .setLevelRequired(10)
-  .setConsumeExperience(true)
-  .setName("artisan_worktables_mystcraft_ink_bottle_dragon")
+    [<roots:wildroot>, <roots:wildroot>, <roots:wildroot>]])
+  .addOutput(<minecraft:paper> * 3)
+  .setExtraOutputOne(<minecraft:paper>, 0.25)
+  .setExtraOutputTwo(<minecraft:paper>, 0.10)
+  .addTool(<ore:artisansRazor>, 5)
+  .setName("artisan_worktables_paper_wildroot")
   .create();
-
-// Migrate Symbol portfolio recipes to the
-// Scribe worktable
-recipes.remove(<mystcraft:portfolio>);
 scribeTable
   .setShaped([
-    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>], 
-    [<minecraft:string>, null, null], 
-    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>]])
-  .addOutput(<mystcraft:portfolio>.withTag({}))
-  .addTool(<ore:artisansNeedle>, 10)
-  .setName("artisan_worktables_mystcraft_portfolio")
+    [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>],
+    [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>],
+    [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>]])
+  .setFluid(<liquid:water> * 1000)
+  .addOutput(<minecraft:paper> * 4)
+  .setExtraOutputOne(<minecraft:paper>, 0.33)
+  .setExtraOutputTwo(<minecraft:paper>, 0.16)
+  .setExtraOutputThree(<minecraft:paper>, 0.08)
+  .addTool(<ore:artisansBeaker>, 5)
+  .setName("artisan_worktables_paper_sawdust")
   .create();
-
-// Migrate Collation folder recipes to the
-// Scribe worktable
-recipes.remove(<mystcraft:folder>);
 scribeTable
-  .setShaped([
-    [null, <minecraft:leather>, null],
-    [<minecraft:string>, null, null],
-    [null, <minecraft:leather>, null]])
-  .addOutput(<mystcraft:folder>.withTag({Pages: {}}))
-  .addTool(<ore:artisansNeedle>, 5)
-  .setName("artisan_worktables_mystcraft_folder")
-  .create();
-
-// Remove alternative book recipes (aside from the Tinkers one)
-// and add a slightly more efficient scribe book recipe
-recipes.removeByRecipeName("roots:book");
-recipes.removeByRecipeName("erebus:book");
-scribeTable
-  .setShaped([
-    [<ore:paper>, <ore:paper>],
-    [<ore:leather>, <ore:paper>]])
-  .addOutput(<minecraft:book>)
-  .setExtraOutputOne(<minecraft:book>, 0.25)
-  .setExtraOutputTwo(<minecraft:book>, 0.10)
-  .addTool(<ore:artisansNeedle>, 10)
+  .setShapeless([
+    <thermalfoundation:material:801>,
+    <thermalfoundation:material:801>])
+  .setFluid(<liquid:water> * 1000)
+  .addOutput(<minecraft:paper> * 8)
+  .setExtraOutputOne(<minecraft:paper>, 0.66)
+  .setExtraOutputTwo(<minecraft:paper>, 0.33)
+  .setExtraOutputThree(<minecraft:paper>, 0.16)
+  .addTool(<ore:artisansBeaker>, 5)
   .addTool(<ore:artisansRazor>, 10)
-  .setName("artisan_worktables_efficient_book_recipe")
+  .setName("artisan_worktables_paper_sawdustbrick")
   .create();
 
 // migrate bibliocraft Big Book recipe to scribe table
@@ -142,6 +112,89 @@ scribeTable
   .addOutput(<iceandfire:bestiary>.withTag({Pages: [0] as int[]}))
   .addTool(<ore:artisansQuill>, 30)
   .setName("artisan_worktables_ice_and_fire_bestiary_recipe")
+  .create();
+
+// Migrate Symbol portfolio recipes to the
+// Scribe worktable
+recipes.remove(<mystcraft:portfolio>);
+scribeTable
+  .setShaped([
+    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>], 
+    [<minecraft:string>, null, null], 
+    [<minecraft:leather>, <minecraft:leather>, <minecraft:leather>]])
+  .addOutput(<mystcraft:portfolio>.withTag({}))
+  .addTool(<ore:artisansNeedle>, 10)
+  .setName("artisan_worktables_mystcraft_portfolio")
+  .create();
+
+// Migrate Collation folder recipes to the
+// Scribe worktable
+recipes.remove(<mystcraft:folder>);
+scribeTable
+  .setShaped([
+    [null, <minecraft:leather>, null],
+    [<minecraft:string>, null, null],
+    [null, <minecraft:leather>, null]])
+  .addOutput(<mystcraft:folder>.withTag({Pages: {}}))
+  .addTool(<ore:artisansNeedle>, 5)
+  .setName("artisan_worktables_mystcraft_folder")
+  .create();
+
+// Replace mystcraft ink recipes with a
+// recipe using: 
+//   - Ender dust
+//   - dyeBlack
+//   - Pixie Dust 
+//   - a glass bottle
+//   - and some water
+recipes.remove(<mystcraft:vial>);
+scribeTable
+  .setShaped([
+    [null, <ore:buttonWood>, null],
+    [<ore:dustEnder>, <ore:dyeBlack>, <ore:pixieDust>],
+    [null, <minecraft:glass_bottle>, null]])
+  .setFluid(<liquid:water> * 500)
+  .addOutput(<mystcraft:vial>)
+  .addTool(<ore:artisansBeaker>, 20)
+  .addTool(<ore:artisansGrimoire>, 10)
+  .setLevelRequired(10)
+  .setConsumeExperience(true)
+  .setName("artisan_worktables_mystcraft_ink_bottle_pixie")
+  .create();
+scribeTable
+  .setShaped([
+    [null, <ore:buttonWood>, null],
+    [<ore:dustEnder>, <ore:dyeBlack>, <ore:dustRedstone>],
+    [null, <ore:dragonBlood>, null]])
+  .addOutput(<mystcraft:vial>)
+  .addTool(<ore:artisansBeaker>, 30)
+  .addTool(<ore:artisansGrimoire>, 20)
+  .setLevelRequired(10)
+  .setConsumeExperience(true)
+  .setName("artisan_worktables_mystcraft_ink_bottle_dragon")
+  .create();
+
+// Add more efficient scribe book recipes
+scribeTable
+  .setShaped([
+    [<ore:paper>, <ore:paper>],
+    [<ore:leather>, <ore:paper>]])
+  .addOutput(<minecraft:book>)
+  .setExtraOutputOne(<minecraft:book>, 0.25)
+  .setExtraOutputTwo(<minecraft:book>, 0.10)
+  .addTool(<ore:artisansNeedle>, 10)
+  .setName("artisan_worktables_efficient_book_recipe")
+  .create();
+scribeTable
+  .setShaped([
+    [<ore:paper>, <ore:paper>],
+    [<ore:leather>, <ore:paper>]])
+  .addOutput(<minecraft:book>)
+  .setExtraOutputOne(<minecraft:book>, 0.55)
+  .setExtraOutputTwo(<minecraft:book>, 0.20)
+  .addTool(<ore:artisansNeedle>, 10)
+  .addTool(<ore:artisansRazor>, 10)
+  .setName("artisan_worktables_super_efficient_book_recipe")
   .create();
 
 // scroll recipes
