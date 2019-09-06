@@ -1,0 +1,69 @@
+{
+  "type": "harvestcraft:lychee",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "harvestcraft:pamlychee",
+      "meta": 0
+    },
+    "b": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      "cccc ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  d  ",
+      " dd  ",
+      "cdddc",
+      "cdddc",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " ddd ",
+      " dbd ",
+      "cdbdc",
+      "cdbdc",
+      "a ba ",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  d  ",
+      "  dd ",
+      "cdddc",
+      "cdddc",
+      " a   ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " ccc ",
+      "cccc ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}
