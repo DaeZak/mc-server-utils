@@ -10,3 +10,8 @@ recipes.addShaped("custom_nametag_recipe", <minecraft:name_tag>, [
   [null, <ore:nuggetGold>, null], 
   [<ore:string>, null, null]
 ]);
+
+recipes.addShapeless(<minecraft:dye:2> * 2,[
+  <ore:dyeBlue>,
+  <ore:dyeYellow>
+]);
