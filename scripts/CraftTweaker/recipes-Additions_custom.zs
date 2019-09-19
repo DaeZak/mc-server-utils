@@ -11,7 +11,17 @@ recipes.addShaped("custom_nametag_recipe", <minecraft:name_tag>, [
   [<ore:string>, null, null]
 ]);
 
+// Add a recipe for green dye
 recipes.addShapeless(<minecraft:dye:2> * 2,[
   <ore:dyeBlue>,
   <ore:dyeYellow>
 ]);
+
+// OreDict the bibliocraft clipboard recipe
+recipes.remove(<bibliocraft:biblioclipboard>);
+recipes.addShaped("custom_bibliocraft_biblioclipboard", <bibliocraft:biblioclipboard>, [
+  [<ore:dyeBlack>, null, <minecraft:feather>], 
+  [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>], 
+  [null, <minecraft:wooden_pressure_plate>, null]
+]);
+
