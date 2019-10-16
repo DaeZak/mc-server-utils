@@ -25,3 +25,6 @@ recipes.addShaped("custom_bibliocraft_biblioclipboard", <bibliocraft:biblioclipb
   [null, <minecraft:wooden_pressure_plate>, null]
 ]);
 
+// Make tree leaves burnable for a little more than half the burntime
+// of sticks
+furnace.setFuel(<ore:treeLeaves>, 60);
