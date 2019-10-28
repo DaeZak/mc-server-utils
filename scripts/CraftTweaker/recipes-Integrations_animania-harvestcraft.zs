@@ -24,7 +24,6 @@ primeCookedMutton.add(<animania:cooked_prime_mutton>);
 primeCookedMutton.add(<harvestcraft:cookedtofuttonitem>);
 
 // Remove and conceal items that don't make sense with Animania installed
-JEI.removeAndHide(<harvestcraft:cheeseitem>);
 JEI.removeAndHide(<harvestcraft:omeletitem>);
 JEI.removeAndHide(<harvestcraft:mushroomketchupomeletitem>);
 JEI.removeAndHide(<harvestcraft:frogcookeditem>);
@@ -50,6 +49,26 @@ for milk in milkTypes {
   });
   recipes.addShapeless(<harvestcraft:freshmilkitem> * 8, [milkBucket]);
 }
+// Add a recipe to produce the milk jar; absent any other way to produce
+// a conventional minecraft milk bucket
+recipes.addShaped("cookingforblockheads_milk_jar_custom", 
+  <cookingforblockheads:milk_jar>, 
+  [
+    [<ore:blockGlass>, <ore:plankWood>, <ore:blockGlass>], 
+    [<ore:blockGlass>, <harvestcraft:freshmilkitem>, <ore:blockGlass>], 
+    [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]
+  ]
+);
+
+// Remove contentional HC cheese recipe but add a way to
+// make daiya cheese with cassava and arrowroot
+recipes.remove(<harvestcraft:cheeseitem>);
+recipes.addShapeless("harvestcraft_cheese_as_daiya", <harvestcraft:cheeseitem>, [
+  <ore:toolPot>,
+  <ore:cropArrowroot>,
+  <ore:cropCassava>,
+  <ore:foodSoymilk>
+]);
 
 // -- Animania froglegs from HC frog --------------------
 recipes.addShapeless("harvestcraft_frog_to_froglegs", <animania:raw_frog_legs>, [
