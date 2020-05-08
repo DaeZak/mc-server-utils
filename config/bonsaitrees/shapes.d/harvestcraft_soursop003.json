@@ -3,16 +3,16 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
-      "meta": 0
+      "name": "minecraft:leaves",
+      "meta": 8
     },
     "b": {
-      "name": "minecraft:leaves",
+      "name": "minecraft:log",
       "meta": 0
     },
     "c": {
       "name": "minecraft:leaves",
-      "meta": 8
+      "meta": 0
     },
     "d": {
       "name": "harvestcraft:pamsoursop",
@@ -23,46 +23,41 @@
     [
       "     ",
       "     ",
-      " bbb ",
-      "bbbbb",
-      " d   ",
-      "     ",
+      " cccc",
+      " cccc",
+      "    d",
       "     "
     ],
     [
-      "  c  ",
-      "  c  ",
-      "bcccb",
-      "bcccb",
+      "  a  ",
+      "  aa ",
+      "caaac",
+      "caaac",
       "d    ",
-      "     ",
       "     "
     ],
     [
+      " aaa ",
+      " aba ",
+      "cabac",
+      "cabac",
+      " db  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      " aaa ",
+      "caaac",
+      "caaac",
+      "   dd",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
       " ccc ",
-      " cac ",
-      "bcacb",
-      "bcacb",
-      "  a  ",
-      "  a  ",
-      "  a  "
-    ],
-    [
-      "  c  ",
-      " cc  ",
-      "bcccb",
-      "bcccb",
-      "   d ",
-      "     ",
-      "     "
-    ],
-    [
-      "     ",
-      "     ",
-      " bbb ",
-      "bbbbb",
-      "  d d",
-      "     ",
+      "ccccc",
+      " dd  ",
       "     "
     ]
   ]

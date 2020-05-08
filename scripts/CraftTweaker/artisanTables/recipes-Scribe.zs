@@ -103,17 +103,6 @@ scribeTable
   .setName("artisan_worktables_bibliocraft_stockroom_catalog_recipe")
   .create();
 
-// migrate Ice and Fire bestiary book to scribe table
-recipes.remove(<iceandfire:bestiary>);
-scribeTable
-  .setShaped([
-    [<iceandfire:manuscript>, <iceandfire:manuscript>],
-    [<iceandfire:manuscript>, null]])
-  .addOutput(<iceandfire:bestiary>.withTag({Pages: [0] as int[]}))
-  .addTool(<ore:artisansQuill>, 30)
-  .setName("artisan_worktables_ice_and_fire_bestiary_recipe")
-  .create();
-
 // Migrate Symbol portfolio recipes to the
 // Scribe worktable
 recipes.remove(<mystcraft:portfolio>);

@@ -1,0 +1,53 @@
+[Unit]
+Description=Minecraft Server
+Documentation=https://www.freedesktop.org/software/systemd/man/systemd.exec.html \
+ https://www.freedesktop.org/software/systemd/man/systemd.service.html \
+ https://www.freedesktop.org/software/systemd/man/systemd.unit.html
+
+Wants=network.target
+After=network.target
+
+[Service]
+Type=simple
+User=minecraft
+Group=minecraft
+
+OOMScoreAdjust=-200
+
+WorkingDirectory=/srv/minecraft/instance
+ReadWritePaths=/srv/minecraft/instance /etc/minecraft /mnt/ramdisk
+InaccessiblePaths=/root /sys -/opt -/lost+found
+
+Nice=-10
+EnvironmentFile=-/etc/minecraft/env.conf
+PassEnvironment=MAXHEAP SERVICE WORLD RCON_PORT RCON_PASS
+KillMode=none
+SuccessExitStatus=0
+
+ProtectHome=true
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectSystem=full
+PrivateDevices=true
+NoNewPrivileges=true
+PrivateTmp=true
+
+ExecStartPre=-/usr/bin/rsync -r -t /srv/minecraft/instance/world_storage/${WORLD}/ /mnt/ramdisk/${WORLD}/
+ExecStart=/usr/bin/java -server \
+  -Xmx${MAXHEAP}M -XX:+UseCompressedOops \
+  -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC \
+  -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 \
+  -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M \
+  -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat \
+  -jar ${SERVICE} nogui
+
+ExecStop=/usr/bin/mcrcon -H localhost -P ${RCON_PORT} -p ${RCON_PASS} save-all flush
+ExecStop=/usr/bin/mcrcon -H localhost -P ${RCON_PORT} -p ${RCON_PASS} stop
+ExecStopPost=/usr/bin/rsync -r -t /mnt/ramdisk/${WORLD}/ /srv/minecraft/instance/world_storage/${WORLD}/
+
+ExecReload=/usr/bin/mcrcon -H localhost -P ${RCON_PORT} -p ${RCON_PASS} reload
+ExecReload=-/usr/bin/mcrcon -H localhost -P ${RCON_PORT} -p ${RCON_PASS} ctrlreload
+
+[Install]
+WantedBy=multi-user.target

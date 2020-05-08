@@ -1,16 +1,21 @@
 [
   {
     "mob": [
+      "primitivemobs:skeleton_warrior"
+    ],
+    "random": 0.45,
+    "result": "deny"
+  },
+  {
+    "mob": [
       "minecraft:creeper"
     ],
-    "onjoin": true,
     "result": "deny"
   },
   {
     "mob": [
       "primitivemobs:rocket_creeper"
     ],
-    "onoin": true,
     "result": "deny"
   }
 ]

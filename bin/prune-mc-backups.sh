@@ -1,4 +1,5 @@
 #!/bin/bash
+. /etc/minecraft/env.conf
 
 #Get the value of the -p flag (prune)
 #which determines the threshold for 
@@ -24,7 +25,7 @@ case $PRUNE_TYP in
 esac
 
 echo 'Changing directory...'
-cd "/media/remote.share/backups/minecraft/$PRUNE_TYP"
+cd "/var/minecraft/$PRUNE_TYP/$WORLD"
 echo "Now in ${PWD}"
 
 #ls -1 will give only files (no directories) and

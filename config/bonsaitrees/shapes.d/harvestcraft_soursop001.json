@@ -3,7 +3,7 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "harvestcraft:pamsoursop",
+      "name": "minecraft:leaves",
       "meta": 0
     },
     "b": {
@@ -11,7 +11,7 @@
       "meta": 0
     },
     "c": {
-      "name": "minecraft:leaves",
+      "name": "harvestcraft:pamsoursop",
       "meta": 0
     },
     "d": {
@@ -23,45 +23,50 @@
     [
       "     ",
       "     ",
-      " ccc ",
-      " ccc ",
-      "  a  ",
+      "aaaa ",
+      "caaa ",
+      "  c  ",
+      "     ",
       "     ",
       "     "
     ],
     [
       "  d  ",
       " ddd ",
-      "cdddc",
-      "cdddc",
-      "    a",
+      "addda",
+      "addda",
+      "     ",
+      "     ",
       "     ",
       "     "
     ],
     [
       " ddd ",
       " dbd ",
-      "cdbdc",
-      "cdbdc",
-      "a baa",
+      "adbda",
+      "adbda",
+      "c b  ",
+      "  b  ",
       "  b  ",
       "  b  "
     ],
     [
       "  d  ",
-      " dd  ",
-      "cdddc",
-      "cdddc",
-      "aa  a",
+      " ddd ",
+      "addda",
+      "addda",
+      "     ",
+      "     ",
       "     ",
       "     "
     ],
     [
       "     ",
       "     ",
-      "cccc ",
-      " ccc ",
-      "   a ",
+      "aaaaa",
+      " aaaa",
+      " c   ",
+      "     ",
       "     ",
       "     "
     ]

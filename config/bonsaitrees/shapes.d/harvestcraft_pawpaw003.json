@@ -3,65 +3,60 @@
   "version": 2,
   "ref": {
     "a": {
+      "name": "minecraft:leaves",
+      "meta": 8
+    },
+    "b": {
       "name": "minecraft:log",
       "meta": 0
     },
-    "b": {
-      "name": "minecraft:leaves",
-      "meta": 0
-    },
     "c": {
-      "name": "harvestcraft:pampawpaw",
+      "name": "minecraft:leaves",
       "meta": 0
     },
     "d": {
-      "name": "minecraft:leaves",
-      "meta": 8
+      "name": "harvestcraft:pampawpaw",
+      "meta": 0
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "bbbbb",
-      "cbbbc",
-      "   c ",
-      "     ",
+      " ccc ",
+      "ccccc",
+      "d    ",
       "     "
     ],
     [
-      "  d  ",
-      "  dd ",
-      "bdddb",
-      "bdddb",
-      " cc  ",
-      "     ",
-      "     "
-    ],
-    [
-      " ddd ",
-      " dad ",
-      "bdadb",
-      "bdadb",
-      " cacc",
       "  a  ",
-      "  a  "
+      " aaa ",
+      "caaac",
+      "caaac",
+      "    d",
+      "     "
     ],
     [
-      "  d  ",
-      "  dd ",
-      "bdddb",
-      "bdddb",
-      "   cc",
-      "     ",
+      " aaa ",
+      " aba ",
+      "cabac",
+      "cabac",
+      "d b  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "caaac",
+      "caaac",
+      " d   ",
       "     "
     ],
     [
       "     ",
       "     ",
-      " bbb ",
-      " bbb ",
-      "     ",
+      " ccc ",
+      "ccccc",
       "     ",
       "     "
     ]
