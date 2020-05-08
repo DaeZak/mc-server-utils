@@ -8,11 +8,11 @@
     },
     "b": {
       "name": "minecraft:leaves",
-      "meta": 3
+      "meta": 11
     },
     "c": {
       "name": "minecraft:leaves",
-      "meta": 11
+      "meta": 3
     },
     "d": {
       "name": "harvestcraft:pamjackfruit",
@@ -23,39 +23,39 @@
     [
       "     ",
       "     ",
-      " bbbb",
-      "bbbb ",
-      "d  d ",
+      "ccccc",
+      " cccd",
+      " dd  ",
       "     ",
       "     ",
       "     "
     ],
     [
-      "  c  ",
-      " ccc ",
-      "bcccb",
-      "bcccb",
-      " d d ",
+      "  b  ",
+      "  bb ",
+      "cbbbc",
+      "cbbbc",
+      "   d ",
       "     ",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cac ",
-      "bcacb",
-      "bcacb",
-      "  a  ",
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "  ad ",
       "  a  ",
       "  a  ",
       "  a  "
     ],
     [
-      "  c  ",
-      " cc  ",
-      "bcccb",
-      "bcccb",
-      "  d  ",
+      "  b  ",
+      "  bb ",
+      "cbbbc",
+      "cbbbc",
+      "d d d",
       "     ",
       "     ",
       "     "
@@ -63,9 +63,9 @@
     [
       "     ",
       "     ",
-      "bbbb ",
-      "bbbb ",
-      "   d ",
+      " ccc ",
+      " ccc ",
+      " d   ",
       "     ",
       "     ",
       "     "

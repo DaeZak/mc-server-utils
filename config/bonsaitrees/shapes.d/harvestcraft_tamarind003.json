@@ -3,8 +3,8 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:leaves",
-      "meta": 11
+      "name": "harvestcraft:pamtamarind",
+      "meta": 0
     },
     "b": {
       "name": "minecraft:log",
@@ -15,40 +15,44 @@
       "meta": 3
     },
     "d": {
-      "name": "harvestcraft:pamtamarind",
-      "meta": 0
+      "name": "minecraft:leaves",
+      "meta": 11
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "cccc ",
-      "ccccc",
+      " cccc",
+      " ccc ",
+      "     ",
       "     ",
       "     "
     ],
     [
-      "  a  ",
-      " aaa ",
-      "caaac",
-      "caaac",
-      "   dd",
+      "  d  ",
+      "  dd ",
+      "cdddc",
+      "cdddc",
+      "a    ",
+      "     ",
       "     "
     ],
     [
-      " aaa ",
-      " aba ",
-      "cabac",
-      "cabac",
+      " ddd ",
+      " dbd ",
+      "cdbdc",
+      "cdbdc",
+      " ab  ",
       "  b  ",
       "  b  "
     ],
     [
-      "  a  ",
-      " aa  ",
-      "caaac",
-      "caaac",
+      "  d  ",
+      "  dd ",
+      "cdddc",
+      "cdddc",
+      " a a ",
       "     ",
       "     "
     ],
@@ -56,8 +60,9 @@
       "     ",
       "     ",
       "cccc ",
-      " ccc ",
-      "  d  ",
+      "ccccc",
+      "  a  ",
+      "     ",
       "     "
     ]
   ]

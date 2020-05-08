@@ -23,17 +23,17 @@
     [
       "     ",
       "     ",
-      " ccc ",
-      " ccc ",
-      "   d ",
+      " cccc",
+      " cccc",
+      "     ",
       "     "
     ],
     [
       "  a  ",
-      "  a  ",
+      " aaa ",
       "caaac",
       "caaac",
-      "d    ",
+      "     ",
       "     "
     ],
     [
@@ -41,15 +41,15 @@
       " aba ",
       "cabac",
       "cabac",
-      " db d",
+      "  b  ",
       "  b  "
     ],
     [
       "  a  ",
-      " aaa ",
+      " aa  ",
       "caaac",
       "caaac",
-      "    d",
+      " d dd",
       "     "
     ],
     [
@@ -57,7 +57,7 @@
       "     ",
       "ccccc",
       " cccc",
-      " d d ",
+      "  d d",
       "     "
     ]
   ]

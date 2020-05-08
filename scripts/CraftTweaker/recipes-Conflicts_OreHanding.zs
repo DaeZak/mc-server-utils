@@ -110,15 +110,13 @@ recipes.remove(<immersiveengineering:storage_slab:6>);
 oreHelper.mergeNuggets('Silver',
   <thermalfoundation:material:194>,
   [
-    <immersiveengineering:metal:23>,
-    <iceandfire:silver_nugget>
+    <immersiveengineering:metal:23>
   ]
 );
 oreHelper.mergeIngots('Silver',
   <thermalfoundation:material:130>,
   [
     <immersiveengineering:metal:3>,
-    <iceandfire:silver_ingot>,
     <projectred-core:resource_item:102>
   ]
 );
@@ -130,7 +128,6 @@ oreHelper.mergeOreBlocks('Silver',
   <thermalfoundation:storage:2>,
   [
     <immersiveengineering:storage:3>,
-    <iceandfire:silver_block>,
     <projectred-exploration:stone:10>
   ]
 );
