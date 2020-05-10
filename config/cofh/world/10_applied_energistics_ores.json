@@ -1,7 +1,6 @@
 {
 	"dependencies": [
-        	"projectred-core",
-        	"projectred-exploration"
+        	"appliedenergistics2"
 	],
 	"priority": 950,
 	"populate": {

@@ -1,0 +1,85 @@
+{
+	"dependencies": [
+                "chisel",
+                "ferdinandsflowers",
+		"thermalfoundation",
+		"beneath"
+	],
+	"priority": 945,
+	"populate": {
+		"dd_black_stalactite": {
+			"distribution": "uniform",
+                        "cluster-count": 2,
+                        "chunk-chance": 8,
+			"min-height": 10,
+			"max-height": 246,
+			"generator": {
+				"type": "stalactite",
+                                "block": [
+                                    {
+                                        "name": "minecraft:obsidian",
+                                        "weight": 58
+                                    },
+                                    {
+                                        "name": "chisel:obsidian",
+                                        "properties": {
+                                            "variation": "7"
+                                        },
+                                        "weight": 40
+                                    },
+                                    {
+                                        "name": "ferdinandsflowers:block_metal_light",
+                                        "properties": {
+                                            "type": "redstone"
+                                        },
+                                        "weight": 2
+                                    }
+                                ]
+			},
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		},
+		"dd_black_stalagmite": {
+			"distribution": "uniform",
+                        "cluster-count": 2,
+                        "chunk-chance": 8,
+			"min-height": 10,
+			"max-height": 246,
+			"generator": {
+				"type": "stalagmite",
+                                "block": [
+                                    {
+                                        "name": "minecraft:obsidian",
+                                        "weight": 56
+                                    },
+                                    {
+                                        "name": "chisel:obsidian",
+                                        "properties": {
+                                            "variation": "7"
+                                        },
+                                        "weight": 40
+                                    },
+                                    {
+                                        "name": "ferdinandsflowers:block_metal_light",
+                                        "properties": {
+                                            "type": "redstone"
+                                        },
+                                        "weight": 4
+                                    }
+                                ]
+			},
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		}
+	}
+}

@@ -8,3 +8,7 @@ recipes.addShaped(<rustic:crop_stake> * 3, [
   [<ore:slabWood>],
   [<ore:slabWood>]
 ]);
+
+// Add Quark tallow to the candle making recipes
+var oreWax = <ore:wax>;
+oreWax.add(<quark:tallow>);

@@ -1,6 +1,6 @@
 {
 	"dependencies": [
-		"iceandfire",
+		"appliedenergistics2",
 		"immersiveengineering",
 		"mysticalworld",
 		"thermalfoundation",
@@ -115,7 +115,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 12,
+			"cluster-count": 14,
 			"min-height": 10,
 			"max-height": 246,
 			"retrogen": false,
@@ -249,7 +249,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 8,
+			"cluster-count": 10,
 			"min-height": 10,
 			"max-height": 246,
 			"retrogen": "true",
@@ -307,7 +307,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 6
+				"cluster-size": 8
 			},
 			"cluster-count": 6,
 			"min-height": 10,
@@ -369,7 +369,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 16
 			},
-			"cluster-count": 16,
+			"cluster-count": 14,
 			"min-height": 10,
 			"max-height": 246,
 			"retrogen": "true",
@@ -463,31 +463,6 @@
 				"cluster-size": 4
 			},
 			"cluster-count": 2,
-			"min-height": 10,
-			"max-height": 246,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					10
-				]
-			}
-		},
-		"dd_sapphire": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": {
-					"name": "iceandfire:sapphire_ore"
-				},
-				"material": "minecraft:stone",
-				"cluster-size": 2
-			},
-			"cluster-count": {
-				"min": 6,
-				"max": 12
-			},
 			"min-height": 10,
 			"max-height": 246,
 			"retrogen": "true",
@@ -643,11 +618,11 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 24
+				"cluster-size": 12
 			},
 			"cluster-count": {
-				"min": 6,
-				"max": 8
+				"min": 2,
+				"max": 6
 			},
 			"min-height": 10,
 			"max-height": 246,

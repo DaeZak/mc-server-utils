@@ -1,10 +1,6 @@
-#modloaded biomesoplenty iceandfire projectred-exploration
+#modloaded biomesoplenty projectred-exploration
 
 import mods.jei.JEI;
-
-// Fix Ice and Fire sapphire block to gems recipe
-recipes.remove(<iceandfire:sapphire_gem>);
-recipes.addShapeless(<iceandfire:sapphire_gem> * 9, [<ore:blockSapphire>]);
 
 // Remove BoP and PR sapphire block and recipes; they are not needed
 JEI.removeAndHide(<biomesoplenty:gem_block:6>);

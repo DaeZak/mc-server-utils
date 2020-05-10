@@ -140,7 +140,7 @@ recipes.remove(<mystcraft:vial>);
 scribeTable
   .setShaped([
     [null, <ore:buttonWood>, null],
-    [<ore:dustEnder>, <ore:dyeBlack>, <ore:pixieDust>],
+    [<ore:dustEnder>, <ore:dyeBlack>, <twilightforest:transformation_powder>],
     [null, <minecraft:glass_bottle>, null]])
   .setFluid(<liquid:water> * 500)
   .addOutput(<mystcraft:vial>)
@@ -154,7 +154,7 @@ scribeTable
   .setShaped([
     [null, <ore:buttonWood>, null],
     [<ore:dustEnder>, <ore:dyeBlack>, <ore:dustRedstone>],
-    [null, <ore:dragonBlood>, null]])
+    [null, <twilightforest:fiery_blood>, null]])
   .addOutput(<mystcraft:vial>)
   .addTool(<ore:artisansBeaker>, 30)
   .addTool(<ore:artisansGrimoire>, 20)

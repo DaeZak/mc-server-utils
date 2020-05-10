@@ -47,6 +47,20 @@ recipes.addShapeless(<harvestcraft:fishtrapbaititem> * 2,
   [<ore:string>, <ore:listAllfishraw>]
 );
 
+// Fix non-ore-dicted animal trap recipes
+recipes.remove(<harvestcraft:groundtrap>);
+recipes.addShaped(<harvestcraft:groundtrap>, [
+  [<ore:stickWood>, <minecraft:trapdoor>, <ore:stickWood>], 
+  [<ore:string>, <ore:chestWood>, <ore:string>], 
+  [<ore:stickWood>, <ore:string>, <ore:stickWood>]
+]);
+recipes.remove(<harvestcraft:watertrap>);
+recipes.addShaped(<harvestcraft:watertrap>, [
+  [<ore:stickWood>, <minecraft:fishing_rod>, <ore:stickWood>], 
+  [<ore:string>, <ore:chestWood>, <ore:string>], 
+  [<ore:stickWood>, <ore:string>, <ore:stickWood>]
+]);
+
 // Make tofu in the crafting grid with a juicer
 recipes.addShapeless(<harvestcraft:soymilkitem>, [
   <harvestcraft:soybeanitem>.transformReplace(<harvestcraft:silkentofuitem>),
