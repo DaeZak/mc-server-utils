@@ -35,12 +35,14 @@ PrivateTmp=true
 
 ExecStartPre=-/usr/bin/rsync -r -t /srv/minecraft/instance/world_storage/${WORLD}/ /mnt/ramdisk/${WORLD}/
 ExecStart=/usr/bin/java -server \
-  -Xmx${MAXHEAP}M -XX:+UseCompressedOops \
+  -Xmx${MAXHEAP}M -Xms${MAXHEAP}M \
+  -Dsun.rmi.dgc.server.gcInterval=3600000 \
   -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC \
   -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 \
-  -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M \
+  -XX:MaxGCPauseMillis=40 -XX:G1HeapRegionSize=32M \
+  -XX:+ExplicitGCInvokesConcurrent \
   -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat \
-  -jar ${SERVICE} nogui
+  -jar ${SERVICE} --nogui
 
 ExecStop=/usr/bin/mcrcon -H localhost -P ${RCON_PORT} -p ${RCON_PASS} save-all flush
 ExecStop=/usr/bin/mcrcon -H localhost -P ${RCON_PORT} -p ${RCON_PASS} stop
