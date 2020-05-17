@@ -1,9 +1,10 @@
-#modloaded harvestcraft randomthings simplecorn thermalexpansion
+#modloaded betteranimalsplus harvestcraft randomthings simplecorn thermalexpansion
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.thermalexpansion.Pulverizer;
+import mods.jei.JEI;
 
 // All non-grain items that can be pulverized into flour
 val nonGrainList = [
@@ -60,3 +61,15 @@ val cornKernelItems = [
 for cornKernel in cornKernelItems {
   Pulverizer.addRecipe(<harvestcraft:cornmealitem>, cornKernel, 500);
 }
+
+// Remove better animapls plus fried egg
+recipes.remove(<betteranimalsplus:fried_egg>);
+JEI.hide(<betteranimalsplus:fried_egg>);
+
+// Correct ground meat recipes for Pulverizer
+Pulverizer.addRecipe(<harvestcraft:groundturkeyitem> * 2, <betteranimalsplus:turkey_leg_raw>, 1000);
+Pulverizer.addRecipe(<harvestcraft:groundturkeyitem> * 2, <harvestcraft:turkeyrawitem>, 1000);
+Pulverizer.addRecipe(<harvestcraft:groundturkeyitem> * 16, <betteranimalsplus:turkey_raw>, 2500);
+
+Pulverizer.addRecipe(<harvestcraft:groundvenisonitem> * 2, <harvestcraft:venisonrawitem>, 1000);
+Pulverizer.addRecipe(<harvestcraft:groundvenisonitem> * 2, <twilightforest:cooked_venison>, 1000);

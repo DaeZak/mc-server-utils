@@ -28,3 +28,4 @@ recipes.addShaped("custom_bibliocraft_biblioclipboard", <bibliocraft:biblioclipb
 // Make tree leaves burnable for a little more than half the burntime
 // of sticks
 furnace.setFuel(<ore:treeLeaves>, 60);
+furnace.setFuel(<randomthings:spectrelog>, 95);
