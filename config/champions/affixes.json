@@ -4,28 +4,28 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 3
   },
   {
     "identifier": "cinder",
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   },
   {
     "identifier": "arctic",
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   },
   {
     "identifier": "desecrator",
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 3
   },
   {
     "identifier": "scrapper",
@@ -39,7 +39,7 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   },
   {
     "identifier": "knockback",
@@ -53,7 +53,7 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   },
   {
     "identifier": "dampening",
@@ -81,7 +81,7 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   },
   {
     "identifier": "hasty",
@@ -95,7 +95,7 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   },
   {
     "identifier": "molten",
@@ -106,9 +106,9 @@
   },
   {
     "identifier": "plagued",
-    "enabled": true,
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 4
   }
 ]

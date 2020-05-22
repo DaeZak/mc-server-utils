@@ -13,7 +13,7 @@
 			"generator": {
 				"block": "coal_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 16
+				"cluster-size": 20
 			},
 			"cluster-count": 32,
 			"min-height": 10,
@@ -33,7 +33,7 @@
 			"generator": {
 				"block": "iron_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 16
+				"cluster-size": 20
 			},
 			"cluster-count": 24,
 			"min-height": 10,
@@ -53,7 +53,7 @@
 			"generator": {
 				"block": "gold_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 8
+				"cluster-size": 10
 			},
 			"cluster-count": 8,
 			"min-height": 10,
@@ -73,7 +73,7 @@
 			"generator": {
 				"block": "redstone_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 12
+				"cluster-size": 15
 			},
 			"cluster-count": 12,
 			"min-height": 10,
@@ -93,7 +93,7 @@
 			"generator": {
 				"block": "diamond_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 8
 			},
 			"cluster-count": 8,
 			"min-height": 10,
@@ -113,7 +113,7 @@
 			"generator": {
 				"block": "lapis_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 8
+				"cluster-size": 12
 			},
 			"cluster-count": 14,
 			"min-height": 10,
@@ -135,7 +135,7 @@
 					"name": "emerald_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"cluster-size": 4
 			},
 			"cluster-count": {
 				"min": 4,
@@ -162,9 +162,12 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 24
+				"cluster-size": 10
 			},
-			"cluster-count": 48,
+			"cluster-count": {
+				"min": 8,
+				"max": 16
+			},
 			"min-height": 10,
 			"max-height": 246,
 			"retrogen": false,
@@ -187,7 +190,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 16
+				"cluster-size": 20
 			},
 			"cluster-count": 20,
 			"min-height": 10,
@@ -212,7 +215,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 16
+				"cluster-size": 20
 			},
 			"cluster-count": 16,
 			"min-height": 10,
@@ -247,7 +250,7 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 8
+				"cluster-size": 12
 			},
 			"cluster-count": 10,
 			"min-height": 10,
@@ -282,7 +285,7 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 12
+				"cluster-size": 15
 			},
 			"cluster-count": 10,
 			"min-height": 10,
@@ -307,7 +310,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 8
+				"cluster-size": 12
 			},
 			"cluster-count": 6,
 			"min-height": 10,
@@ -342,7 +345,7 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 6
 			},
 			"cluster-count": 4,
 			"min-height": 10,
@@ -367,7 +370,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 16
+				"cluster-size": 15
 			},
 			"cluster-count": 14,
 			"min-height": 10,
@@ -402,7 +405,7 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 6
 			},
 			"cluster-count": 4,
 			"min-height": 10,
@@ -482,7 +485,7 @@
 					"name": "mysticalworld:amethyst_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 6
 			},
 			"cluster-count": 10,
 			"min-height": 10,
@@ -507,7 +510,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 12
+				"cluster-size": 10
 			},
 			"cluster-count": {
 				"min": 4,
@@ -535,7 +538,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 6
 			},
 			"cluster-count": {
 				"min": 2,
@@ -570,7 +573,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 6
 			},
 			"cluster-count": {
 				"min": 4,
@@ -618,7 +621,7 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 12
+				"cluster-size": 8
 			},
 			"cluster-count": {
 				"min": 2,
