@@ -234,23 +234,6 @@ mageTable
   .setName("artisan_worktables_waystones_warp_stone")
   .create();
 
-// Make soul shards corrupted ingot in mage table
-recipes.removeByRecipeName("soulshardsrespawn:corrupted_ingot");
-mageTable
-  .setShaped([
-    [<ore:dustCorrupted>, <ore:dustVile>, <ore:dustCorrupted>], 
-    [<ore:dustVile>, <ore:ingotIron>, <ore:dustVile>], 
-    [<ore:dustCorrupted>, <ore:dustVile>, <ore:dustCorrupted>]])
-  .addOutput(<soulshardsrespawn:materials>)
-  .setExtraOutputOne(<tconstruct:shard>.withTag({Material: "corrupted"}) * 2, 0.25)
-  .setExtraOutputTwo(<tconstruct:shard>.withTag({Material: "corrupted"}), 0.1)
-  .addTool(<ore:artisansAthame>, 5)
-  .addTool(<ore:artisansGrimoire>, 5)
-  .setLevelRequired(10)
-  .setConsumeExperience(false)
-  .setName("artisan_worktables_soulshards_corrupted_ingot")
-  .create();
-
 // Make soul shards soul cage in mage table
 recipes.removeByRecipeName("soulshardsrespawn:soul_cage");
 mageTable

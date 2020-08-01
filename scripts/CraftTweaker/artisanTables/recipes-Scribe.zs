@@ -30,15 +30,6 @@ scribeTable
   .create();
 scribeTable
   .setShaped([
-    [<roots:wildroot>, <roots:wildroot>, <roots:wildroot>]])
-  .addOutput(<minecraft:paper> * 3)
-  .setExtraOutputOne(<minecraft:paper>, 0.25)
-  .setExtraOutputTwo(<minecraft:paper>, 0.10)
-  .addTool(<ore:artisansRazor>, 5)
-  .setName("artisan_worktables_paper_wildroot")
-  .create();
-scribeTable
-  .setShaped([
     [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>],
     [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>],
     [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>]])
