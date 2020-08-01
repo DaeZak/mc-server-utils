@@ -17,5 +17,19 @@
       "primitivemobs:rocket_creeper"
     ],
     "result": "deny"
+  },
+  {
+    "mob": [
+      "betteranimalsplus:eel_freshwater"
+    ],
+    "random": 0.775,
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "betteranimalsplus:zotzpyre"
+    ],
+    "random": 0.823,
+    "result": "deny"
   }
 ]

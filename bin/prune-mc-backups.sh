@@ -50,7 +50,7 @@ if [ $FCOUNT -gt $PRUNE_VAL ]; then
     PCOUNT=$(expr $FCOUNT - $COUNTR)
     
     if [ $PCOUNT -gt $PRUNE_VAL ]; then
-      `sudo rm -f "$f"`
+      `rm -f "$f"`
       RETCODE=$?
 
       if [ $RETCODE -eq 0 ]; then
