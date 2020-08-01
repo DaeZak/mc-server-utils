@@ -22,3 +22,13 @@ recipes.addShaped("opencomputers_material41", <opencomputers:material:12>, [
   [null, <minecraft:iron_nugget>, null]
 ]);
 
+// Remove ProjectRed sickles; because why do they even have those?
+JEI.removeAndHide(<projectred-exploration:wooden_sickle>);
+JEI.removeAndHide(<projectred-exploration:stone_sickle>);
+JEI.removeAndHide(<projectred-exploration:iron_sickle>);
+JEI.removeAndHide(<projectred-exploration:golden_sickle>);
+JEI.removeAndHide(<projectred-exploration:ruby_sickle>);
+JEI.removeAndHide(<projectred-exploration:sapphire_sickle>);
+JEI.removeAndHide(<projectred-exploration:peridot_sickle>);
+JEI.removeAndHide(<projectred-exploration:diamond_sickle>);
+
