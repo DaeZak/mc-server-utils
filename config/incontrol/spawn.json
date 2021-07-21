@@ -1,35 +1,10 @@
 [
-  {
-    "mob": [
-      "primitivemobs:skeleton_warrior"
-    ],
-    "random": 0.45,
-    "result": "deny"
-  },
-  {
-    "mob": [
-      "minecraft:creeper"
-    ],
-    "result": "deny"
-  },
-  {
-    "mob": [
-      "primitivemobs:rocket_creeper"
-    ],
-    "result": "deny"
-  },
-  {
-    "mob": [
-      "betteranimalsplus:eel_freshwater"
-    ],
-    "random": 0.775,
-    "result": "deny"
-  },
-  {
-    "mob": [
-      "betteranimalsplus:zotzpyre"
-    ],
-    "random": 0.823,
-    "result": "deny"
-  }
+    {
+        "mob": [
+            "environmental:deer",
+            "upgrade_aquatic:goose"
+        ],
+        "onjoin": true,
+        "result": "deny"
+    }
 ]

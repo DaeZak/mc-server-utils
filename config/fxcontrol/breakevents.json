@@ -1,0 +1,11 @@
+[
+  {
+    "block": [
+        "biomesoplenty:pink_cherry_leaves",
+        "biomesoplenty:white_cherry_leaves"
+    ],
+    "random": 0.125,
+    "drop": "pamhc2trees:cherryitem",
+    "result": "allow"
+  }
+]
