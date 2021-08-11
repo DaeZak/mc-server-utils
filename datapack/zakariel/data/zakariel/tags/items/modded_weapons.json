@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "create:deforester",
+      "required": false
+    },
+    {
+      "id": "savageandravage:cleaver_of_beheading",
+      "required": false
+    },
+    {
+      "id": "savageandravage:wand_of_freezing",
+      "required": false
+    },
+    {
+      "id": "quark:flamerang",
+      "required": false
+    },
+    {
+      "id": "quark:pickarang",
+      "required": false
+    }
+  ]
+}

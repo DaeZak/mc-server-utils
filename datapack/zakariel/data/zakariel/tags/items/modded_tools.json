@@ -1,0 +1,80 @@
+{
+  "values": [
+    {
+      "id": "adhooks:pudge_launcher",
+      "required": false
+    },
+    {
+      "id": "adhooks:spear_launcher",
+      "required": false
+    },
+    {
+      "id": "adhooks:web_launcher",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:bitsaw_stone",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:bitsaw_gold",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:bitsaw_iron",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:bitsaw_diamond",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:bitsaw_netherite",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:chisel_stone",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:chisel_iron",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:chisel_gold",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:chisel_diamond",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:chisel_netherite",
+      "required": false
+    },
+    {
+      "id": "chiselsandbits:wrench_wood",
+      "required": false
+    },
+    {
+      "id": "create:super_glue",
+      "required": false
+    },
+    {
+      "id": "mcwwindows:hammer",
+      "required": false
+    },
+    {
+      "id": "mcwroofs:roofing_hammer",
+      "required": false
+    },
+    {
+      "id": "quark:trowel",
+      "required": false
+    },
+    {
+      "id": "supplementaries:flute",
+      "required": false
+    }
+  ]
+}

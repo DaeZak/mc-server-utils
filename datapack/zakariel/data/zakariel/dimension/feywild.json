@@ -1,0 +1,89 @@
+{
+  "type": "zakariel:faery",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": -3405167666857333484,
+    "biome_source": {
+      "type": "minecraft:vanilla_layered",
+      "large_biomes": true,
+      "seed": -3495872349,
+      "biomes": [
+        "minecraft:taiga",
+        "minecraft:taiga_hills",
+        "minecraft:snowy_taiga",
+        "minecraft:snowy_taiga_hills",
+        "minecraft:snowy_taiga_mountains",
+        "minecraft:snowy_tundra",
+        "minecraft:stone_shore",
+        "minecraft:cold_ocean",
+        "minecraft:deep_cold_ocean",
+        "biomesoplenty:gravel_beach",
+        "biomesoplenty:tundra_basin",
+        "biomesoplenty:tundra",
+        "biomesoplenty:tundra_bog",
+        "biomesoplenty:snowy_fir_clearing",
+        "biomesoplenty:snowy_coniferous_forest",
+        "biomesoplenty:scrubland"
+      ]
+    },
+    "settings": {
+      "noodle_caves_enabled": true,
+      "ore_veins_enabled": true,
+      "deepslate_enabled": false,
+      "noise_caves_enabled": true,
+      "aquifers_enabled": true,
+      "min_surface_level":-10,
+      "bedrock_floor_position": 0,
+      "sea_level": 32,
+      "disable_mob_generation": false,
+      "structures": {
+        "stronghold": {
+          "distance": 0,
+          "count": 0,
+          "spread": 0
+        },
+        "structures": {
+          "quark:big_dungeon": {
+            "spacing": 32,
+            "separation": 12,
+            "salt": 12345616
+          }
+        }
+      },
+      "noise": {
+        "top_slide": {
+          "target": 120,
+          "size": 3,
+          "offset": 0
+        },
+        "bottom_slide": {
+          "target": 320,
+          "size": 4,
+          "offset": -1
+        },
+        "sampling": {
+          "xz_scale": 1,
+          "xz_factor": 80,
+          "y_scale": 3,
+          "y_factor": 60
+        },
+        "size_vertical": 1,
+        "size_horizontal": 2,
+        "height": 255,
+        "min_y":1,
+        "density_factor": 0.1,
+        "density_offset": 0.01,
+        "random_density_offset": false,
+        "simplex_surface_noise": false,
+        "island_noise_override": false,
+        "amplified": false
+      },
+      "default_block": {
+        "Name": "minecraft:dirt"
+      },
+      "default_fluid": {
+        "Name": "minecraft:water"
+      }
+    }
+  }
+}

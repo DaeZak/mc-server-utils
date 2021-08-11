@@ -1,10 +1,10 @@
 [
-    {
-        "mob": [
-            "environmental:deer",
-            "upgrade_aquatic:goose"
-        ],
-        "onjoin": true,
-        "result": "deny"
-    }
+  {
+      "mob": [
+          "environmental:deer",
+          "upgrade_aquatic:goose"
+      ],
+      "onjoin": true,
+      "result": "deny"
+  }
 ]

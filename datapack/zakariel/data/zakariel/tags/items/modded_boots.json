@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "environmental:wanderer_boots",
+      "required": false
+    },
+    {
+      "id": "savageandravage:griefer_boots",
+      "required": false
+    }
+  ]
+}

@@ -11,7 +11,7 @@ val pressing = <recipetype:create:pressing>;
 // Flour, dough and bread related recipes
 craftingTable.removeRecipe(<item:create:dough>);
 bulkWashing.removeRecipe(<item:create:dough>);
-//JEI.hideItem(<item:create:dough>);
+JEI.hideItem(<item:create:dough>);
 
 mixing.addRecipe("mixing_dough_1", "none", <item:pamhc2foodcore:doughitem> * 2, [
   <tag:items:forge:flour>, 

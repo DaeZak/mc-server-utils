@@ -1,0 +1,1 @@
+give MightySpencer minecraft:netherite_leggings{Enchantments:[{id: "protection", lvl: 4}, {id: "projectile_protection", lvl: 4}, {id: "fire_protection", lvl: 4}], "quark:RuneAttached": 1b, "quark:RuneColor": {id: "quark:rainbow_rune", Count: 1b}, Unbreakable: 1, display: {Name: '{"text": "Dark Knight Greaves", "color":""}', Lore:['{"text":"Loyalty"}']}, Age: -32768} 1

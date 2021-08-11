@@ -1,0 +1,1 @@
+give MightySpencer minecraft:shield{Enchantments:[{}], "quark:RuneAttached": 1b, "quark:RuneColor": {id: "quark:rainbow_rune", Count: 1b}, BlockEntityTag:{Base:13, Patterns:[{Pattern:"glb",Color:9}]}, Unbreakable: 1, display: {Name: '{"text": "Mighty Shield", "color":""}', Lore:['{"text":"It keeps him safe"}', '{"text":"So Tough!"}']}, Age: -32768} 1

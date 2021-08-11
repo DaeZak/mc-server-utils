@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "endergetic:booflo_vest",
+      "required": false
+    },
+    {
+      "id": "environmental:healer_pouch",
+      "required": false
+    },
+    {
+      "id": "savageandravage:griefer_chestplate",
+      "required": false
+    }
+  ]
+}
