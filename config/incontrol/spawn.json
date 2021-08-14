@@ -1,10 +1,94 @@
 [
   {
-      "mob": [
-          "environmental:deer",
-          "upgrade_aquatic:goose"
-      ],
-      "onjoin": true,
-      "result": "deny"
+    "mob": [
+      "environmental:deer",
+      "upgrade_aquatic:goose"
+    ],
+    "onjoin": true,
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "minecraft:illusioner"
+    ],
+    "block": [
+      "minecraft:birch_planks",
+      "minecraft:dark_oak_planks",
+      "savageandravage:gloomy_tiles"
+    ],
+    "structure": "minecraft:pillager_outpost",
+    "maxcount": {
+      "amount": 3,
+      "mob": "minecraft:illusioner",
+      "perchunk": true
+    },
+    "result": "allow"
+  },
+  {
+    "mob": [
+      "minecraft:illusioner"
+    ],
+    "maxcount": {
+      "amount": 5,
+      "mob": "minecraft:illusioner",
+      "perchunk": true
+    },
+    "structure": "minecraft:mansion",
+    "result": "allow"
+  },
+  {
+    "mob": [
+      "minecraft:illusioner"
+    ],
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "minecraft:pillager"
+    ],
+    "structure": "minecraft:pillager_outpost",
+    "seesky": true,
+    "random": 0.13,
+    "nbt": {
+      "HandItems": [
+        {"Count": 1, "id": "minecraft:crossbow"},
+        {"Count": 64, "id": "savageandravage:mischief_arrow"}
+      ], 
+      "ArmorItems": [
+        {"Count": 1, "id": "minecraft:iron_boots"}, 
+        {"Count": 1, "id": "minecraft:chainmail_leggings"}, 
+        {"Count": 1, "id": "minecraft:iron_chestplate"}
+      ]
+    },
+    "result": "default"
+  },
+  {
+    "mob": [
+      "minecraft:drowned",
+      "minecraft:husk",
+      "minecraft:phantom",
+      "minecraft:skeleton",
+      "minecraft:stray",
+      "minecraft:zombie",
+      "minecraft:zombie_villager"
+    ],
+    "mintime": 17950,
+    "maxtime": 21999,
+    "damageadd": 1.5,
+    "healthadd": 6,
+    "result": "default"
+  },
+  {
+    "mob": [
+      "minecraft:cave_spider",
+      "minecraft:spider",
+      "betteranimalsplus:tarantula"
+    ],
+    "mintime": 17950,
+    "maxtime": 21999,
+    "damageadd": 0.5,
+    "healthadd": 2,
+    "speedadd": 0.23,
+    "result": "default"
   }
 ]
