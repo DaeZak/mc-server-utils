@@ -1,0 +1,10 @@
+
+#Text Config
+[text]
+	#Allow text renderer to draw text with shadow, setting to false can improve performance a bit.
+	allowShadow = true
+	#Fixed resolution level. When the GUI scale increases, the resolution level will not increase.
+	#In this case, gui scale should be even numbers (2, 4, 6...), based on Minecraft GUI system.
+	#If your fonts are not really bitmap fonts, then you should keep this setting false.
+	fixedResolution = false
+

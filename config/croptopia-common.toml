@@ -1,0 +1,114 @@
+#allows the user to right click harvest crops
+rightClickHarvest = true
+
+#Croptopia tree generation
+[worldGeneration]
+
+	#Settings for orange_tree_configured
+	[worldGeneration.orange_tree_configured]
+		biomes = ["minecraft:plains", "minecraft:sunflower_plains", "minecraft:windswept_forest", "minecraft:flower_forest", "minecraft:forest", "biomesoplenty:clover_patch", "biomesoplenty:orchard"]
+
+	#Settings for dragon_fruit_tree_configured
+	[worldGeneration.dragon_fruit_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:rainforest", "biomesoplenty:rocky_rainforest", "biomesoplenty:tropics"]
+
+	#Settings for kumquat_tree_configured
+	[worldGeneration.kumquat_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:rainforest", "biomesoplenty:tropics"]
+
+	#Settings for banana_tree_configured
+	[worldGeneration.banana_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:bayou", "biomesoplenty:jade_cliffs", "biomesoplenty:rainforest", "biomesoplenty:tropics"]
+
+	#Settings for plum_tree_configured
+	[worldGeneration.plum_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:bamboo_grove", "biomesoplenty:cherry_blossom_grove", "biomesoplenty:lavender_forest", "biomesoplenty:lavender_field", "biomesoplenty:orchard", "biomesoplenty:woodland"]
+
+	#Settings for date_tree_configured
+	[worldGeneration.date_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:mediterranean_forest", "biomesoplenty:rainforest", "biomesoplenty:tropics"]
+
+	#Settings for cashew_tree_configured
+	[worldGeneration.cashew_tree_configured]
+		biomes = ["minecraft:dark_forest", "biomesoplenty:boreal_forest", "biomesoplenty:woodland"]
+
+	#Settings for mango_tree_configured
+	[worldGeneration.mango_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:jade_cliffs", "biomesoplenty:rainforest", "biomesoplenty:rocky_rainforest", "biomesoplenty:tropics"]
+
+	#Settings for coconut_tree_configured
+	[worldGeneration.coconut_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:lush_desert", "biomesoplenty:rainforest", "biomesoplenty:rocky_rainforest"]
+
+	#Settings for apricot_tree_configured
+	[worldGeneration.apricot_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:orchard", "biomesoplenty:mediterranean_forest"]
+
+	#Settings for nutmeg_tree_configured
+	[worldGeneration.nutmeg_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:rainforest", "biomesoplenty:rocky_rainforest"]
+
+	#Settings for persimmon_tree_configured
+	[worldGeneration.persimmon_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:woodland"]
+
+	#Settings for almond_tree_configured
+	[worldGeneration.almond_tree_configured]
+		biomes = ["minecraft:dark_forest", "biomesoplenty:forested_field", "biomesoplenty:mediterranean_forest"]
+
+	#Settings for avocado_tree_configured
+	[worldGeneration.avocado_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest"]
+
+	#Settings for fig_tree_configured
+	[worldGeneration.fig_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:mediterranean_forest"]
+
+	#Settings for cinnamon_tree_configured
+	[worldGeneration.cinnamon_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:rainforest"]
+
+	#Settings for peach_tree_configured
+	[worldGeneration.peach_tree_configured]
+		biomes = ["minecraft:plains", "minecraft:sunflower_plains", "biomesoplenty:bayou", "biomesoplenty:marsh", "biomesoplenty:orchard"]
+
+	#Settings for apple_tree_configured
+	[worldGeneration.apple_tree_configured]
+		biomes = ["minecraft:plains", "minecraft:sunflower_plains", "biomesoplenty:forested_field", "biomesoplenty:grassland", "biomesoplenty:orchard", "biomesoplenty:seasonal_forest"]
+
+	#Settings for pear_tree_configured
+	[worldGeneration.pear_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:forested_field", "biomesoplenty:orchard", "biomesoplenty:seasonal_forest", "biomesoplenty:woodland"]
+
+	#Settings for grapefruit_tree_configured
+	[worldGeneration.grapefruit_tree_configured]
+		biomes = ["minecraft:sparse_jungle", "minecraft:jungle", "biomesoplenty:rocky_rainforest"]
+
+	#Settings for star_fruit_tree_configured
+	[worldGeneration.star_fruit_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:tropics"]
+
+	#Settings for nectarine_tree_configured
+	[worldGeneration.nectarine_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:orchard", "biomesoplenty:mediterranean_forest"]
+
+	#Settings for lemon_tree_configured
+	[worldGeneration.lemon_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:clover_patch", "biomesoplenty:orchard"]
+
+	#Settings for cherry_tree_configured
+	[worldGeneration.cherry_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:bamboo_grove", "biomesoplenty:cherry_blossom_grove", "biomesoplenty:orchard"]
+
+	#Settings for lime_tree_configured
+	[worldGeneration.lime_tree_configured]
+		biomes = ["minecraft:forest", "minecraft:windswept_forest", "minecraft:flower_forest", "biomesoplenty:clover_patch", "biomesoplenty:orchard"]
+
+	#Settings for pecan_tree_configured
+	[worldGeneration.pecan_tree_configured]
+		biomes = ["minecraft:dark_forest", "biomesoplenty:woodland", "biomesoplenty:bayou", "biomesoplenty:marsh"]
+
+	#Settings for walnut_tree_configured
+	[worldGeneration.walnut_tree_configured]
+		biomes = ["minecraft:dark_forest", "biomesoplenty:boreal_forest", "biomesoplenty:woodland"]
+

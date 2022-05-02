@@ -1,0 +1,9 @@
+[
+  {
+    "name": "witching_hour",
+    "conditions": {
+      "mintime": 17950,
+      "maxtime": 21999
+    }
+  }
+]

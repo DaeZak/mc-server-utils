@@ -1,0 +1,4 @@
+gamerule disableElytraMovementCheck true
+gamerule keepInventory true
+gamerule playersSleepingPercentage 50
+gamerule spawnRadius 5

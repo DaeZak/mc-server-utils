@@ -1,20 +1,11 @@
 [
   {
     "mob": [
-      "environmental:deer",
-      "upgrade_aquatic:goose"
-    ],
-    "onjoin": true,
-    "result": "deny"
-  },
-  {
-    "mob": [
       "minecraft:illusioner"
     ],
     "block": [
       "minecraft:birch_planks",
-      "minecraft:dark_oak_planks",
-      "savageandravage:gloomy_tiles"
+      "minecraft:dark_oak_planks"
     ],
     "structure": "minecraft:pillager_outpost",
     "maxcount": {
@@ -51,8 +42,7 @@
     "random": 0.13,
     "nbt": {
       "HandItems": [
-        {"Count": 1, "id": "minecraft:crossbow"},
-        {"Count": 64, "id": "savageandravage:mischief_arrow"}
+        {"Count": 1, "id": "minecraft:crossbow"}
       ], 
       "ArmorItems": [
         {"Count": 1, "id": "minecraft:iron_boots"}, 
@@ -72,10 +62,9 @@
       "minecraft:zombie",
       "minecraft:zombie_villager"
     ],
-    "mintime": 17950,
-    "maxtime": 21999,
-    "damageadd": 1.5,
-    "healthadd": 6,
+    "phase": "witching_hour",
+    "seesky": true,    
+    "healthadd": 2,
     "result": "default"
   },
   {
@@ -84,11 +73,10 @@
       "minecraft:spider",
       "betteranimalsplus:tarantula"
     ],
-    "mintime": 17950,
-    "maxtime": 21999,
-    "damageadd": 0.5,
-    "healthadd": 2,
-    "speedadd": 0.23,
+    "phase": "witching_hour",
+    "seesky": true,
+    "healthadd": 1,
+    "speedadd": 0.15,
     "result": "default"
   }
 ]

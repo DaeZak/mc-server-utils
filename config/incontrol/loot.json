@@ -1,10 +1,5 @@
 [
   {
-    "mob": "betteranimalsplus:boar",
-    "item": "quark:tallow",
-    "itemcount": "0-1/0-2/1-3"
-  },
-  {
     "mob": "betteranimalsplus:pheasant",
     "item": "minecraft:feather",
     "itemcount": "0-2/0-3/1-4"
@@ -20,10 +15,7 @@
       "minecraft:illusioner",
       "minecraft:pillager",
       "minecraft:ravager",
-      "minecraft:vindicator",
-      "savageandravage:executioner",
-      "savageandravage:griefer",
-      "savageandravage:iceologer"
+      "minecraft:vindicator"
     ],
     "realplayer": true,
     "structure": "minecraft:pillager_outpost",
@@ -38,10 +30,7 @@
       "minecraft:illusioner",
       "minecraft:pillager",
       "minecraft:ravager",
-      "minecraft:vindicator",
-      "savageandravage:executioner",
-      "savageandravage:griefer",
-      "savageandravage:iceologer"
+      "minecraft:vindicator"
     ],
     "realplayer": true,
     "structure": "minecraft:pillager_outpost",
