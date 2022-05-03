@@ -1,0 +1,37 @@
+{
+    "name": "Cooking 101",
+    "icon": "farmersdelight:skillet",
+    "category": "patchouli:cooking_basics",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "farmersdelight:cooking_pot",
+            "text": "The cooking pot can prepare a variety of meals efficiently; as long as it is heated.$(br2)Heat sources include Fires, Lava, Magma, Campfires or a lit Stove - any of which the pot can be placed directly on top of.$(br2)Bring plenty of wooden blows as most things you make in a pot will require bowls to be dished up to your guests$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "farmersdelight:cutting_board",
+            "text": "A cutting board can be used to slice and dice ingredients (and other things).$(br2)Items held in your offhand can be placed on the cutting board by right clicking.  You can then use the tool; such as a knife, in your main hand by right clicking again once something is on the cutting board.$(br2)Processed items are ejected from the side of the cutting board and can be caught by hoppers, baskets and other things.$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "farmersdelight:iron_knife",
+            "text": "In addition to working with Cuttin Boards; Knives are a great tool for harvesting resources.$(br2)When used on animals they ensure that secondary drops like leather always occur $(o)at least once$().$(br2)When used on plants one may obtain some straw in addition to the seed drops that normally come from breaking grass.$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "farmersdelight:skillet",
+            "text": "Skillets placed over a valid heat source can perform campfire cooking recipes; but much faster than a campfire would do them$(br2)They can also be used; with cookable items in your offhand slot, to manually cook over a valid heatsource.$(br2)They can also double as a heavy knockback weapon$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "farmersdelight:stove",
+            "text": "The stove is a direct upgrade to the campfire$(br2)Like the campfire it requires no additional fuel once lit$(br2)Items placed on top will be cooked; or it can serve as a heat source for pots and skillets$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "And more..",
+            "text": "In addition there are many Croptopia recipes that require more conventional tools; search the Croptopia mod ('@Croptopia' in JEI) to see for yourself$(br2)"
+        }
+    ]
+}

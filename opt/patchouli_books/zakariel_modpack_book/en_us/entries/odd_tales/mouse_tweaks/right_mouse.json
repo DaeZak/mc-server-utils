@@ -1,0 +1,17 @@
+{
+    "name": "Right Mouse Button",
+    "icon": "minecraft:spruce_button",
+    "category": "patchouli:mousetweaks",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Right Mouse Button Tweaks",
+            "text": "These tweaks make working in a Crafting Grid much nicer if you have a lot of crafting to do"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "With a stack of items on your mouse cursor; you can hold down the right mouse button to drop items into the grid.$(br2)Dragging over the same spot will stack more items into that spot."
+        }
+    ]
+}
+

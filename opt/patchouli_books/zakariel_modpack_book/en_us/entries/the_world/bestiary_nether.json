@@ -1,0 +1,84 @@
+{
+    "name": "Bestiary: Nether",
+    "icon": "minecraft:netherrack",
+    "category": "patchouli:the_world",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "The Nether Bestiary",
+            "text": "A compendium of bizarre creatures from the Hellish nether dimension.$(br2)Each section includes a blurb about the creature, whether it is hostile  and any unique characteristics it may have.$(br2)Most entries also include a captioned picture so that intrepid survivalists will be able to recognize them in-person.$(br)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:golden_helmet",
+            "link_recipe": true,
+            "text": "The Piglin denizens of the Nether are normally hostile...but prize and respect Gold above all else.$(br2)The cautious Survivalist travels armored in gold; so as to avoid having problems with the natives.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Foxhound",
+            "text": "These fiery hell hounds are aggressive and will attack on sight. Be wary as their bite can set their hapless victim on fire.$(br2)A blue sub-species can be found in Nether Soulsand Valleys$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use any meat when full health$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)Yes$()$(br)$(#939799)$(o)Use Coal after drinking a Fire Resist Potion$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.A: A Foxhound",
+            "entity": "quark:foxhound",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "A tamed Foxhound can make a Furnace burn hotter by sitting or sleeping on it$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Hoglin",
+            "text": "These hell boars are dangerous and aggressive - be wary.  A full grown Hoglin can send a Survivalist flying with one strike.$(br2)Hoglins despise the smell of Warped Fungi and will not approach it - clever travelers can exploit this fact to keep themselves safe.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Crimson Fungi$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.B: A Hoglin",
+            "entity": "minecraft:hoglin",
+            "rotate": false,
+            "default_rotation": -28,
+            "scale": 0.50,
+            "text": "Baby Piglins are often found playing with Baby Hoglin - strike cautiously if engaging in a fight young Hoglins$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Piglin",
+            "text": "Adult Piglin are normally hostile to all outsiders - but will respect those wearing gold equipment and leave them in peace.$(br2)So great is a Piglins love of gold that they will engage in barter with outsiders that offer Gold Ingots.$(br2)A Piglin will also pick up dropped gold items; but will only offer items in return for Gold Ingots.$(br2)Breaking golden blocks or rumming through chests is taboo to Piglin and will cause you to anger them if they see or hear you doing it$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.C: An Adult Piglin",
+            "entity": "minecraft:piglin",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Their young also love gold; but will steal it rather than offering anything in return$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Piglin, Brute",
+            "text": "These creatures dwell within the remains of an Ancient Piglin civilization now long gone.  They are extremely aggressive and cannot be bartered with or reasoned with.$(br2)Like their smaller and slightly more peaceful cousins they know how to open wooden doors - tread with caution in ruins.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.D: A Piglin Brute",
+            "entity": "minecraft:piglin_brute",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Normal Piglin will come to the aid of their Brutish brethren$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Strider",
+            "text": "These gentle, heat loving creatures can be found wading through Lava in the Nether$(br2)They are not aggressive and; with proper training and gear, can be ridden.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Warped Fungi$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)--$()$(br)$(#939799)$(o)Docile by nature$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.E: An Adult Strider",
+            "entity": "minecraft:strider",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Striders can be ridden using a Saddle and Warped Fungus on a Stick$(br2)"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Killed in Action",
+    "icon": "minecraft:skeleton_skull",
+    "category": "patchouli:and_you",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "On Death & Dying",
+            "text": "$(l)The good news:$()$(br)$(#939799)$(o)You keep your equipment; no more grave runs to collect your gear$()$(br2)$(l)The bad news:$()$(br)$(#939799)$(o)You lose all your bonus hearts from eating and of course most of your XP$()$(br2)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "xpbook:xp_tome",
+            "title": "Take good notes",
+            "text": "However; you can mitigate the problem of XP loss by taking good notes in an XP Tome$(br2)"
+        }
+    ]
+}

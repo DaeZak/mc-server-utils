@@ -1,0 +1,19 @@
+{
+    "name": "MouseTweaks Mod",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:mousetweaks",
+    "priority": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "MouseTweaks",
+            "text": "This mod introduces some small but significant quality of life improvements for using the mouse when Crafting or working with Inventory screens"
+        },
+        {
+            "type": "patchouli:link",
+            "text": "We have RMB, LMB and MouseWheel tweaks set.  See the mod page for a brief guide on how they work.",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks",
+            "link_text": "View on CurseForge"
+        }
+    ]
+}

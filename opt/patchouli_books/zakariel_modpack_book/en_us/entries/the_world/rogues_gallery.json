@@ -1,0 +1,69 @@
+{
+    "name": "Bestiary: Villains",
+    "icon": "farmersdelight:netherite_knife",
+    "category": "patchouli:the_world",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "A Rogues Gallery",
+            "text": "The world is a dangerous place.  In particular $(l)beware of the $(#301934)Witching Hour$()$(br)$(o)The time between midnight and sunrise when evil forces are at their strongest.$()$(br2)Under the light of the moon undead become particularly dangerous$(br2)In the next few pages you will find threats of an unusual nature; that you might be better prepared should you ever encounter them.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Illager, Evoker",
+            "entity": "minecraft:evoker",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "A dangerous magician who can summon Imps called Vexes; as well as conjure spikes from the very earth.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Illager, Illusioner",
+            "entity": "minecraft:illusioner",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "A sly magician who can cast blindness spells and conjure magical duplicates of themself.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Skeleton, Forgotten",
+            "entity": "quark:forgotten",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "The haunted remains of an adventurer who died exploring caves.  Only encountered below ground in the blackest depths they will shoot blinding arrows; but sometimes possess valuable treasure.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Skeleton, Stray",
+            "entity": "minecraft:stray",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "Frozen skeletons encountered only in the frigid north.  Their icy errors will chill your blood$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Spirit, Phantom",
+            "entity": "minecraft:phantom",
+            "rotate": false,
+            "scale": 0.53,
+            "text": "Dark spirits who pursue those beset by nightmares.  Sleep regularly or expect a visit from these wrathful haunts.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Zombie, Drowned",
+            "entity": "minecraft:drowned",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "Found commonly in rivers, aquifers and sometimes at sea; they can hurl tridents with deadly accuracy$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Zombie, Husk",
+            "entity": "minecraft:husk",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "Dessicated zombies which are immune to the effects of sunlight$(br2)"
+        }
+    ]
+}
+

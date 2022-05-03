@@ -1,0 +1,16 @@
+{
+    "name": "Middle Mouse Button",
+    "icon": "minecraft:birch_button",
+    "category": "patchouli:mousetweaks",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Mouse Scroll Button Tweaks",
+            "text": "If you use the mouse scroll wheel while hovering the cursor over a stack of items....you can move items from one inventory to another.$(br2)Scrolling down moves items out of the inventory your mouse cursor is in"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "While scrolling up pulls the items back in."
+        }
+    ]
+}

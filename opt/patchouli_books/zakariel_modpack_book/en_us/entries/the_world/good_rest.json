@@ -1,0 +1,19 @@
+{
+    "name": "Good Rest",
+    "icon": "minecraft:blue_bed",
+    "category": "patchouli:and_you",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Sleep Habits",
+            "text": "It is important to rest regularly - unless you are looking to encounter Phantoms.$(br2)After three nights of not sleeping you will start to be hunted by these guys$(br2)Unless of course you need their membranes for something; in which case happy hunting$(br2)and good luck...$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "minecraft:phantom",
+            "rotate": false,
+            "scale": 0.53
+        }
+    ]
+}
+

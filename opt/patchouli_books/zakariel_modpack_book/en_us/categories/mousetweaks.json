@@ -1,0 +1,8 @@
+{
+    "name": "Mouse Tweaks",
+    "description": "In this section you can learn some helpful mouse shortcuts for crafting",
+    "icon": "croptopia:cheese",
+    "parent": "patchouli:odd_tales",
+    "sortnum": 2
+}
+

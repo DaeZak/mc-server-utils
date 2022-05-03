@@ -1,0 +1,347 @@
+{
+    "name": "Bestiary: Overworld",
+    "icon": "betteranimalsplus:boarhead_dark_brown",
+    "category": "patchouli:the_world",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "The Overworld Bestiary",
+            "text": "A compendium of land creatures and their notable traits.$(br2)Each section includes a blurb about the creature including whether it is hostile, whether it can be lured, bred or tamed and if so by what foods/items.$(br2)Most entries also include a captioned picture so that intrepid survivalists will be able to recognize them in-person.$(br)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "supplementaries:cage",
+            "link_recipe": true,
+            "text": "Some creatures lend themselves to domestication$(br2)The wise Survivalist travels prepared with some cages for trapping rare or useful specimens.$(br2)Without further ado..."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Badger",
+            "text": "Badgers are not usually aggressive; but when threated will throw dirt as a warning.$(br2)If further provoked they will attack.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)Unknown$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.A: Badger",
+            "entity": "betteranimalsplus:badger",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "Badgers will sometimes hunt or attack livestock and other domestic animals.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Bear, Black",
+            "text": "These animals are usually peaceful unless provoked.$(br2)In addition to hunting prey animals they will forage for berries.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Salmon or Honeycomb$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.B: Black Bear",
+            "entity": "betteranimalsplus:blackbear",
+            "default_rotation": -28,
+            "rotate": false,
+            "scale": 1.1,
+            "text": "Think twice before approaching their cubs - black bears are well known to be protective of their young.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Bear, Brown",
+            "text": "These giant creatures are peaceful unless attacked.$(br2)In addition to hunting prey animals they will forage for berries.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use any meat$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.C: Brown Bear",
+            "entity": "betteranimalsplus:brownbear",
+            "default_rotation": -43,
+            "rotate": false,
+            "scale": 0.85,
+            "text": "Think twice before approaching their cubs - brown bears are well known to be protective of their young.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Bear, Polar",
+            "text": "These enormous bears are peaceful unless attacked; or are protecting their young.$(br2)Polar Bears often hunt foxes that invade their territory.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.D: Polar Bear",
+            "entity": "minecraft:polar_bear",
+            "default_rotation": -22,
+            "rotate": false,
+            "scale": 1.0,
+            "text": "Do not approach when they are escorting cubs - polar bears are notoriously protective of their young.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Bee",
+            "text": "Bees prefer to live in Hives close to flowers and trees.$(br2)An active Bee colony with speed up the growth of nearby crops; as well as producing honey.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Flowers$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Flowers, Flowering Azalea, or a Lead$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.E: The Common Bee",
+            "entity": "minecraft:bee",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "Bees are normally peaceful but will become aggressive if attacked; or if their Hive is disturbed. It is said that smoke can pacify them long enough to safely gather honey.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Boar",
+            "text": "Boars are ornery and aggressive - attacking most anything they encounter.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Carrots$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.F: A Forest Boar",
+            "entity": "betteranimalsplus:boar",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Boars will forage through the undergrowth; eating any plants, vegetables or berries that they find.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Coyote",
+            "text": "These opportunistic pack hunters will rest during the day; but become active and aggressive once the sun goes down.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use meat$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)Yes$()$(br)$(#939799)$(o)Use Raw Chicken, Rabbit or Pheasant.$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.G: A Coyote",
+            "entity": "betteranimalsplus:coyote",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Injured or hungry coyotes that have been tamed will lower their tail and beg for food by whimpering$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Deer",
+            "text": "Deer are peaceful.  They are frequently hunted for their venison; and are somewhat skittish around humans.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Apples, Carrots or Wheat$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Breeding items$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.H: Deer",
+            "entity": "betteranimalsplus:deer",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "A deer can be tempted by a carrot on a stick; although they cannot be saddled.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Dog, Shiba Inu",
+            "text": "An intelligent breed of dog found frequently in the mountains.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Meat when at full health$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Bones$()$(br2)Tameable: $(l)Yes$()$(br)$(#939799)$(o)Use Bones$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.I: Shiba Inu",
+            "entity": "quark:shiba",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "A Shiba Inu will fetch lost arrows and tridents for its owner.  It will also bark at dark spots if their owner is holding a torch.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Donkey",
+            "text": "Generally found in Plains alongside their horse bretheren.  A donkey will not wear armor; but is able to carry a chest - making it useful for long trips.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Golden Carrots of Apples$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Leads$()$(br2)Tameable: $(l)Yes$()$(br)$(#939799)$(o)Keep riding until it is tamed$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.J: The Common Donkey",
+            "entity": "minecraft:donkey",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "A donkey can be saddled and ridden. If bred with a Horse it will produce a Mule$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Fox",
+            "text": "Usually found in Forests or Taiga.  Foxes like to sleep, explore and hunt birds, fish and small mammals.  They also love to eat sweet berries.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Sweet Berries or Glow Berries$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Leads$()$(br2)Tameable: $(l)Partially$()$(br)$(#939799)$(o)Breed two adults to produce offspring that are semi-tame$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.K: Adult Fox",
+            "entity": "minecraft:fox",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Foxes cannot be totally tamed; but a fox that likes and trusts you will fight to protect you.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Frog",
+            "text": "Usually in Marshes and Swamps.  There are rumours that careful selective breeding can produce giant frogs.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Spider Eyes or Fish$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Leads$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.L: A Frog",
+            "entity": "quark:frog",
+            "rotate": false,
+            "default_rotation": 42,
+            "scale": 0.55,
+            "text": "Some consider frog legs a delicacy; others - a valuable potion ingredient.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Goat",
+            "text": "Goats are generally peaceful; unless something gets them upset - then they may come charging in for a headbutt.  Survivalists are encouraged to be alert around goats in high places.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Wheat$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Leads or Wheat$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.M: The Common Goat",
+            "entity": "minecraft:goat",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Goats are known for producing milk; and for being excellent high jumpers$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Goose",
+            "text": "Geese are peaceful unless provoked.  However if you anger one it will never forget what you did.$(br2)Being quite curious Geese are known to pick up; and sometimes eat, things they find laying on the ground.$(br2)Breedable: $(l)No$()$(br)$(#939799)$(o)Break Goose Eggs to 'breed'$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Leads or Seeds$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.N: A Wild Goose",
+            "entity": "betteranimalsplus:goose",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Geese lay eggs regularly.  Some consider these large eggs a delicacy$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Lammergeier",
+            "text": "These avian predators are harmless to humans; however they love to hunt Skeletons of all kinds -- cracking the bones and feasting on their marrow$(br2)Lammergeier are found predominantly in arid, hilly regions.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)Yes$()$(br)$(#939799)$(o)Use Bones$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.O: Lammergeier",
+            "entity": "betteranimalsplus:lammergeier",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "A trained lammergeier will attack anything that threatens it's master -- except for Creepers and Ghasts$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Moose",
+            "text": "Full grown Moose are very aggressive towads humans and should be approached with caution.  If left in peace they will roam their forest and graze on grasses.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.P: An Adult Moose",
+            "entity": "betteranimalsplus:moose",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Moose are; perhaps unsurprisingly, not very good swimmers"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Mule",
+            "text": "Produced by breeding horses with donkeys; the mule combines the best of both worlds.$(br2)They are able to be ridden and will carry a chest for you just as a Donkey would.  However they inherit some of the improved speed and jumping power of their horse parent.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Leads$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.Q: The Common Mule",
+            "entity": "minecraft:mule",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Mules cannot be bred; so a high quality mule can be a rare prize that is difficult to replace if lost.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Pheasant",
+            "text": "These small, mild-mannered birds are mostly encountered in grassy and forested regions.$(br2)This species of avian is domesticable similarly to Chickens$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Pumpkins Seeds$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Leads or Pumpkin Seeds$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.R: A Pheasant",
+            "entity": "betteranimalsplus:pheasant",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Pheasants regularly lay eggs.  These eggs are prized for their delicious flavor.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Reindeer",
+            "text": "These gentle creatures are found primarily in snowy regions.  They are quite trusting and can be ridden even without a saddle.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Wheat or Carrots$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)--$()$(br)$(#939799)$(o)Already docile by nature$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.S: A Reindeer",
+            "entity": "betteranimalsplus:reindeer",
+            "rotate": false,
+            "scale": 0.50,
+            "text": "An injured Reindeer can be fed sugar, wheat, carrots or apples (golden and normal) or hay bales to heal them.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Songbird",
+            "text": "These avians come in a wide variety of species.  They are harmless and some can be quite pretty.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Seed.  Only same species birds can breed.$()$(br2)Leadable: $(l)No$()$(br)$(#939799)$(o)However if you are holding seeds they will not run from you$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.T: The Common Songbird",
+            "entity": "betteranimalsplus:songbird",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "The common songbird is quite skittish and will likely run rather than allow a human to get close.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Squirrel",
+            "text": "Playful creatures; they are normally found in forested regions and love to climb trees.$(br2)They are wary of humans and will run rather than allow one to get close$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Seed$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Seed$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.U: The Common Squirrel",
+            "entity": "betteranimalsplus:squirrel",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "It is a well known fact that Squirrels are immune to fall damage.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Tarantula",
+            "text": "More aggresive than their typically boreal cousins - the Tarantula is commonly found in sandy/arid regions.$(br2)A Tarantula will attack regardless of light level and can bite or fire poisonous bristles that blind.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.V: Adult Tarantula",
+            "entity": "betteranimalsplus:tarantula",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Tarantulas despite Iron Golems; although the evolutionary reasons for this are unclear$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Toretoise",
+            "text": "These immense and ponderous creatures can be found in cave systems.$(br2)Their tough shells make them virtually immune to normal attacks - which simply produce a damaging shockwave to anyone standing nearby when struck.$(br2)Toretoises consume glow berries and naturally grow ores of various types on their shells.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.W: Adult Toretoise",
+            "entity": "quark:toretoise",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "A Toretoise can be fed Glow Berries to regrow the Ore on its back.  These ores can be harvested harmlessly with a Pickaxe$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Turkey",
+            "text": "These boreal dwelling fowl are normally peaceful; but will bite back at an aggressor before returning to their normally docile state.$(br2)Like Chickens they lay eggs regularly; although they are more prized for their meat by most farmers.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Pumpkin Seeds$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Pumpkin Seeds$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.X: A Turkey",
+            "entity": "betteranimalsplus:turkey",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "For their size Turkeys as a livestock animal produce a significant quantity of meat and eggs.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Wolf, Feral",
+            "text": "These larger cousines of the common wolf are more dangerous and aggresive.  Commonly found in boreal regions they are very difficult to tame$(br2)A sufficiently hungry Feral Wolf will attack almost anything it thinks it can eat$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Antlers$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)Yes$()$(br)$(#939799)$(o)Use Bones while wearing an Ender Dragon Head$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.Y: A Feral Wolf",
+            "entity": "betteranimalsplus:feralwolf",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "A tamed feral wolf that is injured will lower its tail and whine; they can be healed by feeding them most any meat.$(br2)"
+        } 
+    ]
+}

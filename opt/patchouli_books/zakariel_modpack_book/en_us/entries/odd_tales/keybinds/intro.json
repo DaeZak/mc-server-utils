@@ -1,0 +1,25 @@
+{
+    "name": "Intro to Keybinding",
+    "icon": "minecraft:experience_bottle",
+    "category": "patchouli:keybinds",
+    "priority": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Keybinding 101",
+            "text": "Minecraft is not always helpful about providing good keyboard shortcuts --- especially when there are a lot of mods installed all competing for hot key combinations.$(br2)The trick is to start simple and then only add what you need."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Two mods in particular are worth clearing some space in order to have keyboard shortcuts available:$(br2)$(o)SophisticatedBackpacks and JourneyMap$()$(br2)With that in mind the best start you can make $(o)is to go through and remove every key binding that you are not going to use$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "This is as simple as going down the list of key bindings and; for each one you do not want or do not even know/care what it does, click the button for it (if it is set) and hit $(l)ESC$().$(br2)If it changes to $(o)Not Bound$() you are all set.$(br2): )"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "So - when you are ready hit $(l)ESC$() to bring up the menu and click on $(l)$(o)Options...$() then $(l)$(o)Controls...$() then $(l)$(o)Key Binds...$()$(br2) -- and then go down that list and clear out all the junk."
+        }
+    ]
+}

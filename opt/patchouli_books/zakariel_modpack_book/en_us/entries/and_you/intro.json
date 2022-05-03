@@ -1,0 +1,18 @@
+{
+    "name": "Know Thyself",
+    "icon": "quark:forgotten_hat",
+    "category": "patchouli:and_you",
+    "priority": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Know Thyself",
+            "text": "A brief chapter on things you should know about being an effective adventurer and keeping yourself in top condition$(br2)$(l)Go get 'Em!$()$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Be Prepared",
+            "text": "$(br)Topics covered will include eating health, getting a good night sleep and taking notes.$(br2)"
+        }
+    ]
+}

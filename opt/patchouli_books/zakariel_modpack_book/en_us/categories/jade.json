@@ -1,0 +1,7 @@
+{
+    "name": "Using Jade",
+    "description": "Use Jade to learn about blocks and items in the game",
+    "icon": "quark:green_corundum_cluster",
+    "parent": "patchouli:odd_tales",
+    "sortnum": 3
+}

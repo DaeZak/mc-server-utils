@@ -1,0 +1,17 @@
+{
+    "name": "Hello World!",
+    "icon": "supplementaries:globe_sepia",
+    "category": "patchouli:the_world",
+    "priority": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Welcome to this World",
+            "text": "Greetings Survivalist and welcome to the most expansive chapter yet of the Survivalist's Field Guide.$(br2)This chapter will inform you all the wonders and dangers, flora and fauna - that you await you out there in this great big world.$(br2)$(l)Good Luck! : )$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "In particular we will cover:$(br)$(li)A 'How-To' on composting$(li)Several Bestiary chapters on creatures inhabiting the world$(br2)and lastly$(br)$(li) Chapters on enemies and travel"
+        }
+    ]
+}

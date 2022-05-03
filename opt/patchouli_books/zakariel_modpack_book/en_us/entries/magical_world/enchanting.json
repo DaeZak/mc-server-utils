@@ -1,0 +1,20 @@
+{
+    "name": "Infuser Enchanting",
+    "icon": "minecraft:amethyst_cluster",
+    "category": "patchouli:magical_world",
+    "priority": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "enchantinginfuser:enchanting_infuser",
+            "text": "This powerful step up from the Enchanting Table costs more XP to use but allows you to pick and choose what enchantments you will place on something$(br2)It must be surrounded by bookshelves in much the same fashion as a normal bookshelf - but can be boosted by up to 30 bookshelves$(br2)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Enchantment Infuser",
+            "recipe": "enchantinginfuser:enchanting_infuser",
+            "text": "It is expensive; but can be upgraded to be more powerful and cheaper using Netherite"
+        }
+    ]
+}
+

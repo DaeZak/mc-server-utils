@@ -1,0 +1,54 @@
+{
+    "name": "Hazards and Travel",
+    "icon": "minecraft:powder_snow_bucket",
+    "category": "patchouli:the_world",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Hazards and Travel",
+            "text": "There are a variety of things to see (and look out for) in the world.$(br2)This brief chapter seeks to inform the curious about what to look out for while traveling in the wilds$(br2)At the end there is a bonus section on travel preparadness!$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "biomesoplenty:mud",
+            "title": "Mud",
+            "text": "Naturally occuring in swampy or marshy areas; mud will slow down the unwary traveler.  Although not dangerous on its own; it can be a hazardous environmental condition when fighting$(br2)Since it is very dark in coloration it is also harder to see at night.  Fleeing from an undead horde is the worst time to get stuck in a mud pit.$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:powder_snow_bucket",
+            "title": "Powder Snow",
+            "text": "In the most frigid regions of the world you may encounter Powder Snow.  This snow is light and clingy; an unwary traveler can sink right into it and start freezing.$(br2)If your vision begins to blur and turn blue (and you are up to your hips in snow); you should realize that you are in danger and should seek higher and warmer ground asap$(br2)This dangerous substance can also be carried in buckets - a fact which the devious will no doubt find uses for$(br)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:sweet_berries",
+            "title": "Sweet Berry Bushes",
+            "text": "These thorny bushes are typically encountered in boreal forests such as Taiga.  The berries are delicious however the bushes themselves are a hazard.$(br2)Sweet Berry Bushes will slow and impede movement - making even jumping out of them an impossibility.  In addition their wickedly sharp thorns will lacerate anything unfortunate enough to pass through them$(br2)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "sophisticatedbackpacks:backpack",
+            "title": "Travel Prep: Backpacks",
+            "text": "A Backpack (which can be worn as Chest armor or on the Back as a Curio item) is invaluable for pro-longed travel"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "comforts:sleeping_bag_white",
+            "title": "Travel Prep: Sleeping Bag",
+            "text": "A Sleeping Bag is even more critical to travel safely in the wilderness.  Attempting to navigate at night is a recipe for getting eaten by Zombies."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "quark:tools/crafting/bundle",
+            "title": "Travel Prep: Bag Lunch",
+            "text": "A bundle makes a great Lunch Bag; it can hold up to 64 total items of 4 different types - in one slot.$(br2)Right clicking on the Bundle with an item will put an item in; right clicking the bundle with an empty mouse cursor will take something out$(br2)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "adhooks:spear_launcher",
+            "title": "Travel Prep: Hook Launcher",
+            "text": "Last but not least - bringing a hook launcher (or a crossbow and some rope arrows) can really get you out of a bind$(br2)"
+        }
+    ]
+}

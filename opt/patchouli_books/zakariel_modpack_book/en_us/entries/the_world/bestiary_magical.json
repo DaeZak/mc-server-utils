@@ -1,0 +1,57 @@
+{
+    "name": "Bestiary: Magical",
+    "icon": "biomesoplenty:flowering_oak_sapling",
+    "category": "patchouli:the_world",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "The Magical Bestiary",
+            "text": "A compendium of fairy creatures and their notable traits.$(br2)Each section includes a blurb about the creature and whether it can be tamed or befriended and if so by what foods/items.$(br2)Most entries also include a captioned picture so that intrepid survivalists will be able to recognize them in-person.$(br)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:bundle",
+            "text": "Many fairy creatures like odd or unusual things - including gold or glowing mushrooms.  Come prepared with some shiny odds and ends$(br2)What mysteries await?"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Starbunkle",
+            "text": "These peaceful fairy creatures appear in forested regions and love shiny things.$(br2)They are very skittish and will run from humans if they see them$(br2)They love gold nuggets and will permit someone to approach them who is holding one.  If offered a Gold Nugget they may give you something in return.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.A: An Adult Starbuncle",
+            "entity": "ars_nouveau:starbuncle",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "Where do they come from?  No one knows$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Stoneling",
+            "text": "Mysterious earth fairies that can only be found underground (usually in complete darkness).  They will run from humans and loud noises.$(br2)A sneaky explorer holding a Glow Mushroom may be able to tempt a Stoneling into arms reach long enough to shatter its stone form$(br2)The resulting Heart of Stone can be used on a Stone Block to reincorporate the grateful Fairy - effectively taming it.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.B: A Stoneling",
+            "entity": "quark:stoneling",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "A tamed Stoneline will hold items for you, eat Stone from your hand or even follow you (if you have a Glow Mushroom)$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Whirlisprig",
+            "text": "These peaceful and curious nature fairies appear in forested regions.$(br2)Those who witness someone caring for nature (by growing trees) will reward that person with nature magic...seeing them as a kindred spirit.$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.C: A Whirlisprig",
+            "entity": "ars_nouveau:whirlisprig",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Whirlisprigs will follow creatures they are curious to know more about.$(br2)"
+        }
+    ]
+}
+

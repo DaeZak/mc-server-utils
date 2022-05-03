@@ -1,0 +1,8 @@
+{
+    "name": "Key Bindings",
+    "description": "This section covers some minor changes you can make to in-game key bindings that will be very helpful",
+    "icon": "minecraft:comparator",
+    "parent": "patchouli:odd_tales",
+    "sortnum": 1
+}
+

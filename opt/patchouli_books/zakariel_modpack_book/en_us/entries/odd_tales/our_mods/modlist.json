@@ -1,0 +1,18 @@
+{
+    "name": "The Big Bad Mod List",
+    "icon": "ars_nouveau:mimic_scroll",
+    "category": "patchouli:modpack",
+    "priority": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Our Content Mods",
+            "text": "$(li)Adv. Hook Launchers$(li)Ars Nouveau$(li)Better Animals Plus$(li)BiomesoPlenty$(li)Comforts$(li)Create$(li)Croptopia$(li)Curios$(li)Decorative Blocks$(li)Enchanting Infuser$(li)Farmers Delight$(li)Just Enough Items$(li)JourneyMap$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Macaws Bridges$(li)Macaws Fences$(li)Macaws Furniture$(li)Macaws Roofs$(li)Quark$(li)Redstone Pen$(li)Sophisticated Backpacks$(li)Storage Drawers$(li)Supplementaries$(li)Waystones$(li)XP Tome$(br2)We have a few other mods which do not add things to craft - so I have not included them in this list.$(br2)"
+        }
+    ]
+}
+

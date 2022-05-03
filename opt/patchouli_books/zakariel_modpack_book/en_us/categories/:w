@@ -1,0 +1,17 @@
+{
+    "name": "Effective Search",
+    "icon": "ars_nouveau:allow_scroll",
+    "category": "patchouli:modpack",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "What is Jade",
+            "text": "Jade is a small mod that gives you helpful information about whatever you happen to be looking at in-game.$(br2)It will display a tooltip whenever you are close enough to target what you are looking at."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Jade can provide the name of what you are looking at -- as well as information to specific to the type of thing.$(br2)For creatures it can show you their health; for chests and such it can show you what is inside...and much more"
+        }
+    ]
+}
+

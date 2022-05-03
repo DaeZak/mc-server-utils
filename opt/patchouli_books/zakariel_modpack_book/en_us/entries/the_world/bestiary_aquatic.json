@@ -1,0 +1,265 @@
+{
+    "name": "Bestiary: Aquatic",
+    "icon": "minecraft:sea_lantern",
+    "category": "patchouli:the_world",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "The Aquatic Bestiary",
+            "text": "A compendium of aquatic creatures and their notable traits.$(br2)Each section includes a blurb about the creature including whether it is hostile, whether it can be lured, bred or tamed and if so by what foods/items.$(br2)Most entries also include a captioned picture so that intrepid survivalists will be able to recognize them in-person.$(br)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:axolotl_bucket",
+            "link_recipe": true,
+            "text": "A quick Survivalist can scoop up some rare aquatic creatures in a bucket and bring them back to fill aquariums or decorative ponds.$(br2)Let us see what creatures inhabit the depths."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Axolotl",
+            "text": "These aquatic creatures can survive on land for short periods of time and are not hostile to travelers.$(br2)However; they will hunt other creatures if given the chance.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Bucket of Tropical Fish$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Bucket of Tropical Fish or a Lead$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.A: Leucistic Axolotl",
+            "entity": "minecraft:axolotl",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "They love to hunt fish, turtles and Drowned.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Barracuda",
+            "text": "These predatory fish will hunt other aquatic animals..and humans too if provoked.$(br2)Barracuda are attracted to shiny objects and may attack those wearing equipment made out of Iron, Gold or Diamond$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.B: A Barracuda",
+            "entity": "betteranimalsplus:barracuda",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Barracuda can be quite fast when angry or hungry$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Bobbit Worm",
+            "text": "These aggressive and predatory creatures can be found burrowed into the sand and muck along the ocean floor.  They almost look like strange sea plants or coral formations.$(br2)Beware of approaching too closely; as they will grab anything they can reach in their sharp mandibles -- crushing their prey to death.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.C: A Bobbit Worm",
+            "entity": "betteranimalsplus:bobbit_worm",
+            "rotate": false,
+            "scale": 0.25,
+            "text": "Gross.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Crab, Large",
+            "text": "These creatures scuttle about and will not bother you if not provoked.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.D: A Large Crab",
+            "entity": "betteranimalsplus:crab",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "They are known to be skittish; but rumours abound that they are fond of music.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Crab, Small",
+            "text": "These creatures scuttle about and will not bother you if not provoked.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Fish$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.E: Common Beach Crab",
+            "entity": "quark:crab",
+            "default_rotation": 35,
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Just like their larger cousins they are skittish; but rumoured to enjoy music.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Dolphin",
+            "text": "Friendly aquatic mammals have been known to follow, swim with and help human beings.$(br2)If befriended by being fed Raw Cod or Raw Salmon they may lead their new friend to an interesting location$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.F: A Dolphin",
+            "entity": "minecraft:dolphin",
+            "rotate": false,
+            "scale": 0.50,
+            "text": "Dolphins will sometimes play with items dropped into the water near them.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Eel",
+            "text": "There are a variety of Eel species; both Freshwater and Saltwater.$(br2)These aquatic creatures are peaceful unless provoked; although they have been known to attack swimmers that bring food into the water.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.G: The Freshwater Eel",
+            "entity": "betteranimalsplus:eel_freshwater",
+            "rotate": false,
+            "scale": 0.50,
+            "text": "Saltwater Eels are larger and more predatory than their Freshwater cousins.$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Flying Fish",
+            "text": "These exotic fish can leap from the water and glide through the air for short distances.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.H: A Flying Fish",
+            "entity": "betteranimalsplus:flying_fish",
+            "rotate": false,
+            "scale": 0.60
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Horseshoe Crab",
+            "text": "Slow moving and passive; these harmless crustaceans crawl along the ocean floor.$(br2)Curiously; their blood is known for being a sovreign remedy for curses such as Wither.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.I: A Horseshoe Crab",
+            "entity": "betteranimalsplus:horseshoecrab",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Using a glass bottle on a horseshoe crab; you can harvest some of its blood"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Jellyfish",
+            "text": "These completely passive aquatic animals are non-aggresive but very poisonous.$(br2)Some can even blind a person that comes into contact with them; albeit only temporarily.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.J: The Common Jellyfish",
+            "entity": "betteranimalsplus:jellyfish",
+            "rotate": false,
+            "scale": 0.50
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Nautilus",
+            "text": "These passive sea-dwelling cretures are non-aggresive and totally harmlesss.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.K: The Common Nautilus",
+            "entity": "betteranimalsplus:nautilus",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Nautilus shells are a valuable commodity for deep sea explorers and magicians alike$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Octopus",
+            "text": "Peaceful aquatic creatures that will create and ink cloud and flee it attacked.$(br2)If befriended by being fed some Fish many Octopuses will helpfully protect their new friend from danger.$(br2)However it is worth noting that there is an aggressive blue ringed sub-species that will attack without provocation and is highly poisonous.  The blue-ringed species of Octopus cannot be befriended.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)Partially$()$(br)$(#939799)$(o)Use Fish to befriend them; although they will not follow you$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.L: An Adult Octopus",
+            "entity": "betteranimalsplus:octopus",
+            "rotate": false,
+            "scale": 0.28,
+            "text": "The blue ringed variant (not depicted) is poisonous and aggressive.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Piranha",
+            "text": "Aggressive predatory fish that will prey upon anything they encounter.  Approach tropical rivers with caution as they most frequently are found in warm river waters.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.M: Piranha",
+            "entity": "betteranimalsplus:piranha",
+            "offset": -0.55,
+            "rotate": false,
+            "scale": 0.75,
+            "text": "A swarm of Piranha can strip a Horse or Human down to bones before the victim even realizes they are dead.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Shark",
+            "text": "Large predatory fish that will prey upon anything they encounter and can detect blood in water from a great distance away.$(br2)Most sharks will leave humans alone...unless the shark is very hungry or the human is weakened or bleeding$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.N: Shark",
+            "entity": "betteranimalsplus:shark",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "An injured swimmer is at great risk of a shark attack.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Squid, Glow",
+            "text": "This bioluminescent variant of the Common Squid is only encountered in the deepest and darkest depths of the ocean$(br2)Like their cousins they are passive and will flee if attacked.$(br2)Their ink can be used to make item frames and text (on signs) glow in the dark.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.O: A Glow Squid",
+            "entity": "minecraft:glow_squid",
+            "rotate": false,
+            "scale": 0.35
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Squid, Giant",
+            "text": "In the deepest parts of the ocean one can sometimes encounter these giant predatory squids.$(br2)They bear little resemblance to their smaller harmless brethren - and will attack humans as well as other aquatic life; on sight.$(br2)They are smart enough to break boats in order to get at their human prey - be wary when voyaging across the deep ocean$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.P: A Giant Squid",
+            "entity": "betteranimalsplus:squid_giant",
+            "offset": -2.75,
+            "rotate": false,
+            "scale": 0.20,
+            "text": "Rumours abound of even larger Squid rising from the deepest trenches on rare occasions$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Turtle",
+            "text": "These peaceful creatures are slow moving on land but surprisingly quick in the water.  They prefer to lay their eggs on sandy beaches$(br2)A turtle will always return to the beach of their birth to lay their own eggs.$(br2)Sadly their young are often preyed upon by Skeletons, Zombies, Foxes, Cats and Wolves before they can reach the Ocean.$(br2)Breedable: $(l)Yes$()$(br)$(#939799)$(o)Use Seagrass$()$(br2)Leadable: $(l)Yes$()$(br)$(#939799)$(o)Use Seagrass$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.Q: A Turtle",
+            "entity": "minecraft:turtle",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "Zombies will go out of their way to trample and break turtle eggs; which can only safely be picked up with Silk Touch tools$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Walrus",
+            "text": "These creatures are peaceful unless provoked.$(br2)Usually they are found in or near cold oceanic regions.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.R: An Adult Walrus",
+            "entity": "betteranimalsplus:walrus",
+            "rotate": false,
+            "scale": 0.60,
+            "text": "It is a well known fact that Walruses love Fried Eggs.$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Whale",
+            "text": "These enormous creatures are peaceful unless provoked.$(br2)Generally found in the deep ocean; there are several sub-species such as Beluga and Narwhal whales.$(br2)Breedable: $(l)No$()$(br2)Leadable: $(l)No$()$(br2)Tameable: $(l)No$()$(br2)"
+        },
+        {
+            "type": "patchouli:entity",
+            "name": "Fig.S: An Adult Whale",
+            "entity": "betteranimalsplus:whale",
+            "rotate": false,
+            "scale": 0.75,
+            "text": "An angry whale can knock you silly.  Angry Narwhal will simply spear you like a fish.$(br2)"
+        }
+    ]
+}

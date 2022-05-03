@@ -1,0 +1,16 @@
+{
+    "name": "Effective Search",
+    "icon": "ars_nouveau:allow_scroll",
+    "category": "patchouli:modpack",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Effective Search: Finding Mod Stuff",
+            "text": "When you have your inventory screen open you can use Just Enough Items (the item list and search bar on the right-hand side of the screen) to perform powerful searches."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Typing something in the search bar will search for it by the name of the item.$(br2)You can also search by $(l)mod$() -- if you use the $(l)@$() symbol.$(br2)For example...searching for $(o)@Croptopia$() will show you every item that the mod Croptopia adds to the game.$(br)This can be very powerful for understanding what items exist in the world."
+        }
+    ]
+}

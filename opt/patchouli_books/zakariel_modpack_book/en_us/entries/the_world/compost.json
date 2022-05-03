@@ -1,0 +1,46 @@
+{
+    "name": "Organic Composting",
+    "icon": "minecraft:grass",
+    "category": "patchouli:the_world",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Get Started Composting",
+            "text": "A guide to all things gardening (mainly just composting)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Organic Compost",
+            "recipe": "farmersdelight:organic_compost_from_tree_bark",
+            "recipe2": "farmersdelight:organic_compost_from_rotten_flesh",
+            "text": "Organic Compost turns into Rich Soil$(br)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "multiblock": {
+                "mapping": {
+                    "O": "farmersdelight:organic_compost",
+                    "R": "farmersdelight:rich_soil",
+                    "P": "minecraft:podzol",
+                    "Q": "minecraft:red_mushroom",
+                    "Z": "minecraft:brown_mushroom"
+                },
+                "pattern": [
+                    ["         ", "         ", "         ", "         ", "    O    ", "         ", "         ", "         ", "         "],
+                    ["         ", "         ", "         ", "   OOO   ", "   OOO   ", "   OOO   ", "         ", "         ", "         "],
+                    ["         ", "   Q  Z  ", "   OOO   ", "  OOOOO  ", "Z OOOOO Q", "  OOOOO Z", " Q OOO 0 ", "         ", "     Z   "],
+                    ["___PPP___", "__PPOPP__", "_PPOOOPP_", "PPOOOOOPP", "PPOOOOOOP", "PPOOOOOPP", "_PPOOOPP_", "__PPOPP__", "___PPP___"],
+                    ["_________", "____R____", "___RRR___", "__RRRRR__", "_RRRRRRR_", "__RRRRR__", "___RRR___", "____R____", "_________"]
+                ]
+            },
+            "text": "Compost Heap: Podzol, Mycelium, Brown/Red Mushrooms and Rich Soil with a 3x3x3 area of Organic Compost will speed up the composting process.  Sunlight and water also help.$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "farmersdelight:rich_soil",
+            "link_recipe": false,
+            "text": "Organic Compost turns into Rich Soil$(br2)Rich Soil can further activate Organic Compost or; if mushrooms are planted on it in a dark place - it will turn them  into Mushroom Colonies.$(br2)When tilled it turns into Rich Farmland.$(br2)Rich Farmland is immune to trampling and will boost crop growth when properly hydrated.$(br)"
+        }
+    ]
+}

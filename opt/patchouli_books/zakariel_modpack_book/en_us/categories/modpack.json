@@ -1,0 +1,9 @@
+{
+    "name": "Our Mods",
+    "description": "In this section you can learn what mods are adding content to our world and how to search them effectively",
+    "icon": "minecraft:diamond",
+    "parent": "patchouli:odd_tales",
+    "sortnum": 0
+}
+
+

@@ -1,0 +1,17 @@
+{
+    "name": "Good Food",
+    "icon": "farmersdelight:mixed_salad",
+    "category": "patchouli:and_you",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Eating Healthy",
+            "text": "Eating a balanced diet can really improve your health - which is important for an Adventurer and Survivalist.$()$(br2)For every five unique foods you eat you will gain 2 additional (mostly) permanent hearts of health$(br2)This can increase your health up to a maximum of $(l)10$() additional hearts$(br2)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "solcarrot:food_book",
+            "text": "A Food Book can help you keep track of how close you are to your next heart increase.$(br2)Eat Healthy!$(br2)"
+        }
+    ]
+}

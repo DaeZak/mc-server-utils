@@ -1,0 +1,16 @@
+{
+    "name": "Controls",
+    "icon": "quark:green_shard",
+    "category": "patchouli:jade",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Controls",
+            "text": "Jade has a few simple keyboard shortcuts.$(br2)$(l)NUMPAD 1$()$(br)$(#939799)$(o)Toggles the tooltip on and off.$()$(br2)$(l)NUMPAD 2$()$(br)$(#939799)$(o)Toggles Jade showing info on liquids.$()$(br2)$(l)NUMPAD 3$()$(br)$(#939799)$(o)Will show you recipes for what you are looking at.$()$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)NUMPAD 4$()$(br)$(#939799)$(o)Will show you uses for what you are looking at.$()$(br2)$(l)SHIFT$()$(br)$(#939799)$(o)Shows expanded info on the tooltip (if any)$()"
+        }
+    ]
+}

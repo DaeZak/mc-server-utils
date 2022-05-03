@@ -1,0 +1,22 @@
+{
+    "name": "Left Mouse Button",
+    "icon": "minecraft:oak_button",
+    "category": "patchouli:mousetweaks",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Left Mouse Button Tweaks",
+            "text": "These tweaks make working with Inventory screens much faster and more pleasant"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "LMB: Holding an Item",
+            "text": "When you pick up an item with a left click $(l)and hold$() you will pick up any items of the same type that your cursor passes over as long as you continue to hold down the left mouse button.$(br2)If you hold down the shift key the items will instead be sent to your inventory if there is a matching item there."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "LMB: Empty Cursor",
+            "text": "If you hold down the shift key while pressing the left mouse button - any items your mouse cursor pass over will instead be sent to inventory if there is a matching item there."
+        }
+    ]
+}

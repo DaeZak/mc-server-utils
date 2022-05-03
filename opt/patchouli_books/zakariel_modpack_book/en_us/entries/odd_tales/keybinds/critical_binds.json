@@ -1,0 +1,31 @@
+{
+    "name": "Critical Keybindings",
+    "icon": "storagedrawers:quantify_key",
+    "category": "patchouli:keybinds",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "The  Important Stuff<tm>",
+            "text": "Sophisticated Backpacks has a hotkey that will open a backpack you are wearing.$(br2)Without having to take it off and either put it on the ground or right-click while holding it in your hand.$(br2)$(l)This is a really useful thing to be able to do.$(o)$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "JourneyMap has a hotkey that will drop a waypoint onto your map based on your location.$(br2)$(o)Without having to open the map screen$().$(br2)$(l)This is also very useful$().$(br2)They both want to use the same key and we will have to fix that in order to have them both.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "For JourneyMap:",
+            "text": "$(br2)$(l)SHIFT + c$()$(br)$(#939799)$(o)Create JourneyMap waypoint$()$(br2)$(l)c$()$(br)$(#939799)$(o)Create a JourneyMap waypoint $(l)when the full-screen map is open$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "For SophisticatedBackpacks:",
+            "text": "$(br2)$(l)b$()$(br)$(#939799)$(o)Open your backpack inventory$()$(br2)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "For Curios:",
+            "text": "$(br2)$(l)g$()$(br)$(#939799)$(o)Open your Curios Inventory to put on and take off items (like Backpacks)$()$(br2)"
+        }
+    ]
+}
