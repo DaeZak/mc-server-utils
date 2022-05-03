@@ -85,3 +85,7 @@ craftingTable.addShaped("zakariel_horse_armor_diamond", <item:minecraft:diamond_
 craftingTable.addShapeless("zakariel_prismarine_conversion", <item:minecraft:prismarine_shard> * 3, [
   <item:minecraft:prismarine>
 ]);
+
+// Charcoal recipe is broken (empty tags) in 1.18.2
+furnace.remove(<item:minecraft:charcoal>);
+furnace.addRecipe("furnace_charcoal", <item:minecraft:charcoal>, <tag:items:minecraft:logs_that_burn>, 0.4, 100);
