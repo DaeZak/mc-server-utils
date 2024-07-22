@@ -1,0 +1,3 @@
+*/45 * * * * /bin/bash -c /etc/minecraft/bin/save-to-disk.sh 2>&1 /var/log/minecraftd/save-to-disk-cron.log
+25 */6 * * * /bin/bash -c /etc/minecraft/bin/backup.sh 2>&1 /var/log/minecraftd/backups.log
+50 23 * * *  /bin/bash -c /etc/minecraft/bin/prune-mc-backups.sh -p 6 2>&1 /var/log/minecraftd/backups-prune.log

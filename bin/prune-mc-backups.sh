@@ -11,6 +11,8 @@ while getopts p:t: opts; do
   esac
 done
 
+NOW=`date "+%Y-%m-%d_%Hh%M"`
+
 #If no default value is set we will
 #prune down to five backups
 if [ -z ${PRUNE_VAL+x} ]; then
@@ -24,16 +26,16 @@ case $PRUNE_TYP in
   *) PRUNE_TYP=backups ;;
 esac
 
-echo 'Changing directory...'
+echo "[${NOW}] Changing directory..."
 cd "/var/minecraft/$PRUNE_TYP/$WORLD"
-echo "Now in ${PWD}"
+echo "[${NOW}] Now in ${PWD}"
 
 #ls -1 will give only files (no directories) and
 #we pipe that into wc -l to count the lines.
 #this gives us how many file are in the directory
 FCOUNT="$(ls -1 | wc -l)"
-echo "${FCOUNT} files found"
-echo "Pruning threshold is $PRUNE_VAL"
+echo "[${NOW}] ${FCOUNT} files found"
+echo "[${NOW}] Pruning threshold is $PRUNE_VAL"
 
 if [ $FCOUNT -gt $PRUNE_VAL ]; then
   #Track how far down the list we are
@@ -54,10 +56,10 @@ if [ $FCOUNT -gt $PRUNE_VAL ]; then
       RETCODE=$?
 
       if [ $RETCODE -eq 0 ]; then
-        echo "Pruned $f"
+        echo "[${NOW}] Pruned $f"
         PRUNED=$(expr $PRUNED + 1)
       else
-        printf "Error: [%d] removing file $f\n" $ret_code
+        printf "[${NOW}] Error: [%d] removing file $f\n" $ret_code
         exit $ret_code
       fi
     fi
@@ -65,7 +67,7 @@ if [ $FCOUNT -gt $PRUNE_VAL ]; then
     COUNTR=$(expr $COUNTR + 1)
   done
 
-  echo "Pruned $PRUNED files"
+  echo "[${NOW}] Pruned $PRUNED files"
 else
-  echo "No work to do...quitting"
+  echo "[${NOW}] No work to do...quitting"
 fi

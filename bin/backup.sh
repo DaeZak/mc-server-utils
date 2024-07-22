@@ -8,9 +8,9 @@ if [ ! -d "/var/minecraft/backups/${WORLD}" ]; then
   mkdir "/var/minecraft/backups/${WORLD}"
 fi
 
-echo "Backing up minecraft world..."
+echo "[${NOW}] Backing up minecraft world..."
 tar -C "/srv/minecraft/instance/world_storage" -cf "${BACKUP_FILE}" "${WORLD}"
 
-echo "Compressing backup..."
+echo "[${NOW}] Compressing backup..."
 gzip -f "${BACKUP_FILE}"
-echo "Done."
+echo "[${NOW}] Done."

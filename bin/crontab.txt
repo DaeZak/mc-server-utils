@@ -1,4 +1,6 @@
-*/30 * * * * /bin/bash -c /etc/minecraft/config/bin/save-to-disk.sh 2>&1 /var/minecraft/save-to-disk-cron.log
-25 */8 * * * /bin/bash -c /etc/minecraft/config/bin/backup.sh 2>&1 /var/minecraft/backups.log
-01 02 * * *  /bin/bash -c /etc/minecraft/config/bin/prune-mc-backups.sh -p 6
-15 04 * * 0,3 sudo shutdown -r 2 "Scheduled maintenance reboot starting in 2 minutes" 
+00 00 * * * /home/ec2-user/mc-server-utils/bin/do-mcron.sh 'say Server Shutdown in 30 minutes.'
+15 00 * * * /home/ec2-user/mc-server-utils/bin/do-mcron.sh 'say Server Shutdown in 15 minutes.'
+25 00 * * * /home/ec2-user/mc-server-utils/bin/do-mcron.sh 'say Server Shutdown in 05 minutes.'
+30 00 * * * /home/ec2-user/mc-server-utils/bin/do-mcron.sh 'say Server Shutting down now.'
+31 00 * * * /home/ec2-user/mc-server-utils/bin/do-mcron.sh save-all stop
+45 00 * * * sudo shutdown -P 2 "Nightly shutdown in 2 minutes."
